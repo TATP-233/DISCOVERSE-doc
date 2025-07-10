@@ -1,0 +1,44 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+  background: var(--ifm-background-surface-color);
+}
+
+.featureIcon {
+  height: 120px;
+  width: 120px;
+  margin: 0 auto 2rem auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.featureIcon:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.featureIcon span {
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+
+[data-theme='dark'] .featureIcon {
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark), var(--ifm-color-secondary-dark));
+  box-shadow: 0 8px 25px rgba(96, 165, 250, 0.3);
+}
+
+[data-theme='dark'] .featureIcon:hover {
+  box-shadow: 0 12px 35px rgba(96, 165, 250, 0.4);
+}
+
+/* Legacy support for SVG */
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
