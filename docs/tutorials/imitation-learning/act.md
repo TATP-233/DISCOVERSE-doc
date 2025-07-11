@@ -75,7 +75,12 @@ python3 policies/train.py act -tn <task_name>
 ### 推理命令
 
 ```bash
-python3 policies/infer.py act -tn <task_name> -mts 100 -ts 20241125-110709 -rn discoverse/examples/<tasks_folder>/<task_script>
+python3 policies/infer.py act -tn <task_name> -mts <max_timesteps> -ts <ckpt> -rn discoverse/examples/<tasks_folder>/<task_script>
+```
+
+示例：
+```bash
+python3 policies/infer.py act -tn block_place -mts 100 -ts 20250711-091004 -rn discoverse/examples/task_airbot_play/block_place
 ```
 
 其中：
