@@ -6,6 +6,8 @@ sidebar_position: 4
 
 Diffusion Policy是一种基于扩散模型的模仿学习算法。
 
+本仓库中 dp 和 Diffusion-Policy 两个模块均实现了 Diffusion Policy 算法，但它们来自不同的代码库，可能在工程结构或具体实现细节上有所差异。
+
 ## 📊 数据格式转换
 
 ### 依赖安装
@@ -26,6 +28,8 @@ python3 policies/dp/raw2zarr.py -dir data -tn <task_name>
 - `-tn`: 任务名，程序将根据任务名从data目录中寻找相同名称的数据集文件夹
 
 转换后的数据存放于`discoverse/data/zarr`文件夹中。
+
+# dp
 
 ## 🎓 模型训练
 
@@ -94,9 +98,9 @@ python3 policies/dp/infer_real.py --config-path=configs --config-name=block_plac
 - `--config-name`: 配置文件名
 - 需要注意，真机推理的`config.yaml`相较于`sim`中的`config.yaml`，需要增加`global_camid`和`wrist_camid`，分别指向对应的相机编号
 
-## 🎛️ 专用训练工具
 
-### 使用Diffusion-Policy仓库
+
+# Diffusion-Policy
 
 #### 安装依赖
 
@@ -111,7 +115,8 @@ pip install zarr==2.12.0 wandb ipdb gpustat dm_control omegaconf hydra-core==1.2
 
 ```bash
 cd DISCOVERSE
-mv data/zarr/block_place.zarr policies/Diffusion-Policy/data
+mkdir -p policies/Diffusion-Policy/data/
+mv data/zarr/block_place.zarr policies/Diffusion-Policy/data/
 ```
 
 #### 训练命令
