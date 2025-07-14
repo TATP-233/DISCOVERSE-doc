@@ -3,7 +3,7 @@ const sidebars = {
         {
             type: 'category',
             label: '快速开始',
-            items: ['get-started/installation', 'get-started/quick-start', 'get-started/basic-concepts'],
+            items: ['get-started/installation', 'get-started/quick-start', 'get-started/basic-concepts', 'get-started/real2sim'],
         },
         {
             type: 'category',
