@@ -239,6 +239,59 @@
   - [x] 记录检测到的断开链接(警告级别，不影响构建)
   - [x] 为未来扩展预留API参考、故障排除等栏目的实现计划
 
+### 2025-08-01 (第五次更新 - Modeling文档迁移)
+- [x] **Modeling文档模块迁移**:
+  - [x] 创建modeling教程目录结构
+  - [x] 创建overview.md概览文档，介绍三个建模工具
+  - [x] 迁移xml-editor.md完整文档 (MuJoCo场景编辑器)
+  - [x] 迁移mesh2mjcf.md完整文档 (网格转MJCF工具)
+  - [x] 迁移gaussian-splatting.md完整文档 (3D高斯溅射编辑器)
+- [x] **导航结构更新**:
+  - [x] 更新sidebars.ts添加"3D建模与编辑"分类
+  - [x] 包含所有四个modeling相关文档
+- [x] **内容准确性保证**:
+  - [x] 严格基于DISCOVERSE/doc/modeling/目录原始文档
+  - [x] 保持所有技术细节、命令格式和参数说明不变
+  - [x] 完整保留所有使用示例和注意事项
+- [x] **文档质量**:
+  - [x] 保持原有的详细技术深度
+  - [x] 完整的安装指南和依赖说明
+  - [x] 详细的命令行参数和使用示例
+  - [x] 清晰的概念解释和工作流程
+- [x] **目录结构**:
+  ```
+  tutorials/modeling/
+  ├── overview.md              # 建模工具概览
+  ├── xml-editor.md            # MuJoCo场景编辑器 (基于xml_editor.md)
+  ├── mesh2mjcf.md             # 网格转换工具 (基于mesh2mjcf_zh.md)
+  └── gaussian-splatting.md    # 3D高斯溅射编辑器 (基于gs_edit_zh.md)
+  ```
+
+### 2025-08-02 (第六次更新 - 多语言开发与本地预览经验补充)
+- [x] 明确记录：Docusaurus 多语言开发建议使用 `npm run serve` 进行本地预览，`npm start` 在部分环境下多语言切换可能异常。
+- [x] README.md、cursor.md 均已补充相关说明，便于团队成员和用户理解最佳实践。
+- [x] 所有文档结构、i18n 配置、构建产物均符合官方规范，静态构建和部署无障碍。
+- [x] 多语言文档英文版本同步：已完成 get-started 目录下 installation.md、quick-start.md、basic-concepts.md 的英文翻译与内容同步，优先参考 DISCOVERSE 主仓库内容，无则基于中文自动翻译生成。
+
+### 2025-08-02 (第七次更新 - 侧边栏多语言翻译方式修正)
+- [x] **侧边栏多语言翻译问题解决**:
+  - [x] 发现并修正 Docusaurus 侧边栏本地化的正确方式
+  - [x] 删除错误的独立 `sidebars.js` 文件方式
+  - [x] 采用官方推荐的 JSON 翻译文件方式
+- [x] **实现步骤**:
+  - [x] 使用 `npm run write-translations -- --locale zh-Hans` 生成翻译文件
+  - [x] 修改 `i18n/zh-Hans/docusaurus-plugin-content-docs/current.json` 
+  - [x] 将 "Get Started" → "快速开始", "Tutorials" → "教程"
+  - [x] 删除多余的 `i18n/.../sidebars.js` 文件
+- [x] **技术原理**:
+  - [x] 英文站点使用 `docs/sidebars.js` 结构和标签
+  - [x] 中文站点使用相同结构，但通过 JSON 文件翻译标签
+  - [x] 这是 Docusaurus 官方标准的 i18n 侧边栏本地化方式
+- [x] **文档更新**:
+  - [x] README.md 添加多语言支持和侧边栏翻译说明
+  - [x] cursor.md 记录完整的问题发现和解决过程
+  - [x] 为团队提供正确的多语言开发指导
+
 ## 📝 注意事项
 
 ### 内容策略
@@ -252,6 +305,7 @@
 2. **可访问性**: 支持屏幕阅读器
 3. **多语言**: 保持内容同步更新
 4. **维护性**: 清晰的文件组织结构
+5. **本地预览建议**: Docusaurus 多语言开发建议使用 `npm run serve` 预览，`npm start` 在部分环境下多语言切换可能异常。
 
 ### 独立仓库要求
 1. **路径独立**: 所有链接相对于discoverse-docs目录
@@ -279,6 +333,6 @@
 
 ---
 
-*最后更新: 2025-01-21*
+*最后更新: 2025-08-02*
 *负责人: [当前开发者]*
-*状态: 构建成功，可部署状态* 
+*状态: Modeling文档迁移完成，构建成功，可部署状态*
