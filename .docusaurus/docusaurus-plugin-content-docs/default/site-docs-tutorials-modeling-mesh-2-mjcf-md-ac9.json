@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/modeling/mesh2mjcf",
+  "title": "Mesh2MJCF",
+  "description": "This is a placeholder for the English version. Please translate the content from the Chinese document.",
+  "source": "@site/docs/tutorials/modeling/mesh2mjcf.md",
+  "sourceDirName": "tutorials/modeling",
+  "slug": "/tutorials/modeling/mesh2mjcf",
+  "permalink": "/docs/tutorials/modeling/mesh2mjcf",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/modeling/mesh2mjcf.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Modeling Overview",
+    "permalink": "/docs/tutorials/modeling/overview"
+  },
+  "next": {
+    "title": "Gaussian Splatting",
+    "permalink": "/docs/tutorials/modeling/gaussian-splatting"
+  }
+}

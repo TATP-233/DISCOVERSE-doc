@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/sensors/stereo-camera",
+  "title": "Stereo Camera Simulation Details",
+  "description": "Overview",
+  "source": "@site/docs/tutorials/sensors/stereo-camera.md",
+  "sourceDirName": "tutorials/sensors",
+  "slug": "/tutorials/sensors/stereo-camera",
+  "permalink": "/docs/tutorials/sensors/stereo-camera",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/sensors/stereo-camera.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sensors Overview",
+    "permalink": "/docs/tutorials/sensors/overview"
+  },
+  "next": {
+    "title": "Imitation Learning Overview",
+    "permalink": "/docs/tutorials/imitation-learning/overview"
+  }
+}

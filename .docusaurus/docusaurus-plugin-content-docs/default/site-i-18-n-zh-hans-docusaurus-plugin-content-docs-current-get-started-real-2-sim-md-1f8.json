@@ -1,0 +1,27 @@
+{
+  "id": "get-started/real2sim",
+  "title": "Real2Sim资产生成",
+  "description": "DISCOVERSE 将真实世界的采集数据、3D AIGC 和现有的 3D 资产（格式包括 3DGS (.ply)、网格 (.obj/.stl)、MJCF 物理模型 (.xml)）统一整合，支持作为交互式场景节点（对象和机器人）或背景节点（场景）使用。我们采用 3DGS 作为统一的视觉表示，并整合激光扫描、最先进的生成模型以及基于物理的重光照，以增强重建辐射场的几何和外观保真度。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/get-started/real2sim.md",
+  "sourceDirName": "get-started",
+  "slug": "/get-started/real2sim",
+  "permalink": "/zh-Hans/docs/get-started/real2sim",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/get-started/real2sim.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "基本概念",
+    "permalink": "/zh-Hans/docs/get-started/basic-concepts"
+  },
+  "next": {
+    "title": "环境设置",
+    "permalink": "/zh-Hans/docs/tutorials/basic-simulation/environment-setup"
+  }
+}

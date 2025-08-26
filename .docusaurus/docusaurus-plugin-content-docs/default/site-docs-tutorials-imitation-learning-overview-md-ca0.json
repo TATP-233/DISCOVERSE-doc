@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/imitation-learning/overview",
+  "title": "Imitation Learning Overview",
+  "description": "DISCOVERSE provides a complete imitation learning workflow, supporting end-to-end training from data collection to policy deployment. This chapter introduces four mainstream imitation learning algorithms integrated in the framework.",
+  "source": "@site/docs/tutorials/imitation-learning/overview.md",
+  "sourceDirName": "tutorials/imitation-learning",
+  "slug": "/tutorials/imitation-learning/overview",
+  "permalink": "/docs/tutorials/imitation-learning/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/imitation-learning/overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Stereo Camera Simulation Details",
+    "permalink": "/docs/tutorials/sensors/stereo-camera"
+  },
+  "next": {
+    "title": "Data Generation",
+    "permalink": "/docs/tutorials/imitation-learning/data-generation"
+  }
+}

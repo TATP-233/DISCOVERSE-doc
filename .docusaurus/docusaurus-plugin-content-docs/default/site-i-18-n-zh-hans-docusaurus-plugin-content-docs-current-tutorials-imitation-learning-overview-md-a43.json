@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/imitation-learning/overview",
+  "title": "模仿学习概览",
+  "description": "DISCOVERSE提供了完整的模仿学习工作流，支持从数据收集到策略部署的端到端训练。本章将介绍框架中集成的四种主流模仿学习算法。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/imitation-learning/overview.md",
+  "sourceDirName": "tutorials/imitation-learning",
+  "slug": "/tutorials/imitation-learning/overview",
+  "permalink": "/zh-Hans/docs/tutorials/imitation-learning/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/imitation-learning/overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "传感器概览",
+    "permalink": "/zh-Hans/docs/tutorials/sensors/overview"
+  },
+  "next": {
+    "title": "数据生成",
+    "permalink": "/zh-Hans/docs/tutorials/imitation-learning/data-generation"
+  }
+}

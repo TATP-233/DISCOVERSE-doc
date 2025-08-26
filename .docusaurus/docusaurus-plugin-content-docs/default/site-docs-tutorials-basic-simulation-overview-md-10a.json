@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/basic-simulation/overview",
+  "title": "Basic Simulation Overview",
+  "description": "Welcome to the DISCOVERSE Basic Simulation Tutorial! This tutorial will guide you through creating and running robot simulations in DISCOVERSE. DISCOVERSE is a high-fidelity robot simulation platform based on the MuJoCo physics engine and supports 3D Gaussian Splatting rendering technology.",
+  "source": "@site/docs/tutorials/basic-simulation/overview.md",
+  "sourceDirName": "tutorials/basic-simulation",
+  "slug": "/tutorials/basic-simulation/overview",
+  "permalink": "/docs/tutorials/basic-simulation/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/basic-simulation/overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Real2Sim Asset Generation",
+    "permalink": "/docs/get-started/real2sim"
+  },
+  "next": {
+    "title": "Environment Setup",
+    "permalink": "/docs/tutorials/basic-simulation/environment-setup"
+  }
+}

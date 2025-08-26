@@ -1,0 +1,20 @@
+{
+  "id": "tutorials/data-generation/overview",
+  "title": "Data Generation Overview",
+  "description": "Overview",
+  "source": "@site/docs/tutorials/data-generation/overview.md",
+  "sourceDirName": "tutorials/data-generation",
+  "slug": "/tutorials/data-generation/overview",
+  "permalink": "/docs/tutorials/data-generation/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/data-generation/overview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Domain Randomization Techniques",
+    "permalink": "/docs/tutorials/data-generation/domain-randomization"
+  }
+}

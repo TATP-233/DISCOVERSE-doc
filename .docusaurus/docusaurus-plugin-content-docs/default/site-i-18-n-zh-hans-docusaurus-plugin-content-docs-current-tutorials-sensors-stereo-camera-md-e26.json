@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/sensors/stereo-camera",
+  "title": "立体相机仿真详解",
+  "description": "概述",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/sensors/stereo-camera.md",
+  "sourceDirName": "tutorials/sensors",
+  "slug": "/tutorials/sensors/stereo-camera",
+  "permalink": "/zh-Hans/docs/tutorials/sensors/stereo-camera",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/sensors/stereo-camera.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "机器人控制",
+    "permalink": "/zh-Hans/docs/tutorials/basic-simulation/robot-control"
+  },
+  "next": {
+    "title": "传感器概览",
+    "permalink": "/zh-Hans/docs/tutorials/sensors/overview"
+  }
+}

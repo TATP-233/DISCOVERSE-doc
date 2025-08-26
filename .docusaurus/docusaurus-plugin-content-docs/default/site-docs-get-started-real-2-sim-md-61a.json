@@ -1,0 +1,27 @@
+{
+  "id": "get-started/real2sim",
+  "title": "Real2Sim Asset Generation",
+  "description": "DISCOVERSE integrates real-world acquired data, 3D AIGC, and existing 3D assets (including formats such as 3DGS (.ply), meshes (.obj/.stl), and MJCF physics models (.xml)) in a unified manner, supporting their use as interactive scene nodes (objects and robots) or background nodes (scenes). We adopt 3DGS as the unified visual representation and integrate laser scanning, state-of-the-art generative models, and physics-based relighting to enhance the geometric and appearance fidelity of reconstructed radiance fields.",
+  "source": "@site/docs/get-started/real2sim.md",
+  "sourceDirName": "get-started",
+  "slug": "/get-started/real2sim",
+  "permalink": "/docs/get-started/real2sim",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/get-started/real2sim.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Basic Concepts",
+    "permalink": "/docs/get-started/basic-concepts"
+  },
+  "next": {
+    "title": "Basic Simulation Overview",
+    "permalink": "/docs/tutorials/basic-simulation/overview"
+  }
+}

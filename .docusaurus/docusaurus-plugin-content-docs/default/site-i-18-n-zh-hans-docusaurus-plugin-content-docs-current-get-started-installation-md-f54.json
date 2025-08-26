@@ -1,0 +1,24 @@
+{
+  "id": "get-started/installation",
+  "title": "安装指南",
+  "description": "DISCOVERSE是一个统一、模块化的开源3DGS机器人仿真框架，支持Real2Sim2Real学习流程。本指南将帮助您在系统中安装和配置DISCOVERSE。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/get-started/installation.md",
+  "sourceDirName": "get-started",
+  "slug": "/get-started/installation",
+  "permalink": "/zh-Hans/docs/get-started/installation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/get-started/installation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "installation",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "快速开始",
+    "permalink": "/zh-Hans/docs/get-started/quick-start"
+  }
+}

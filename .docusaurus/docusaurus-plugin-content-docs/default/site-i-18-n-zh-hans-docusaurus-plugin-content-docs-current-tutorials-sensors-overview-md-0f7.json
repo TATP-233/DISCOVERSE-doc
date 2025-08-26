@@ -1,0 +1,24 @@
+{
+  "id": "tutorials/sensors/overview",
+  "title": "传感器概览",
+  "description": "DISCOVERSE提供了丰富的传感器支持，包括RGB相机、深度相机、立体相机等。本教程将带您了解如何在DISCOVERSE中配置和使用各种传感器。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/sensors/overview.md",
+  "sourceDirName": "tutorials/sensors",
+  "slug": "/tutorials/sensors/overview",
+  "permalink": "/zh-Hans/docs/tutorials/sensors/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/sensors/overview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "立体相机仿真详解",
+    "permalink": "/zh-Hans/docs/tutorials/sensors/stereo-camera"
+  },
+  "next": {
+    "title": "模仿学习概览",
+    "permalink": "/zh-Hans/docs/tutorials/imitation-learning/overview"
+  }
+}

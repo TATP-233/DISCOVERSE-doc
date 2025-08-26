@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/imitation-learning/openpi",
+  "title": "OpenPI (Open-source Policy Interface)",
+  "description": "OpenPI 是一种基于预训练模型的策略微调方法，利用预训练模型实现快速原型开发和少样本学习。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/imitation-learning/openpi.md",
+  "sourceDirName": "tutorials/imitation-learning",
+  "slug": "/tutorials/imitation-learning/openpi",
+  "permalink": "/zh-Hans/docs/tutorials/imitation-learning/openpi",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/imitation-learning/openpi.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "RDT (Robotics Diffusion Transformer)",
+    "permalink": "/zh-Hans/docs/tutorials/imitation-learning/rdt"
+  },
+  "next": {
+    "title": "3D 高斯溅射 (3D Gaussian Splatting) 模型编辑指南",
+    "permalink": "/zh-Hans/docs/tutorials/modeling/gaussian-splatting"
+  }
+}

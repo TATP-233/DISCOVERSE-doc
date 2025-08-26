@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/imitation-learning/data-generation",
+  "title": "Data Generation",
+  "description": "Data generation is the first step in imitation learning. DISCOVERSE provides automated data collection tools.",
+  "source": "@site/docs/tutorials/imitation-learning/data-generation.md",
+  "sourceDirName": "tutorials/imitation-learning",
+  "slug": "/tutorials/imitation-learning/data-generation",
+  "permalink": "/docs/tutorials/imitation-learning/data-generation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/imitation-learning/data-generation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Imitation Learning Overview",
+    "permalink": "/docs/tutorials/imitation-learning/overview"
+  },
+  "next": {
+    "title": "ACT (Action Chunking with Transformers)",
+    "permalink": "/docs/tutorials/imitation-learning/act"
+  }
+}

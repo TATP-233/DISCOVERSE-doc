@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/basic-simulation/environment-setup",
+  "title": "Environment Setup",
+  "description": "This tutorial details how to configure the DISCOVERSE simulation environment, including various settings, performance optimization, and troubleshooting.",
+  "source": "@site/docs/tutorials/basic-simulation/environment-setup.md",
+  "sourceDirName": "tutorials/basic-simulation",
+  "slug": "/tutorials/basic-simulation/environment-setup",
+  "permalink": "/docs/tutorials/basic-simulation/environment-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/basic-simulation/environment-setup.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Basic Simulation Overview",
+    "permalink": "/docs/tutorials/basic-simulation/overview"
+  },
+  "next": {
+    "title": "Robot Control",
+    "permalink": "/docs/tutorials/basic-simulation/robot-control"
+  }
+}

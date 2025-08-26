@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/imitation-learning/act",
+  "title": "ACT (Action Chunking with Transformers)",
+  "description": "ACT (Action Chunking with Transformers) 是一种基于Transformer架构的模仿学习算法。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/imitation-learning/act.md",
+  "sourceDirName": "tutorials/imitation-learning",
+  "slug": "/tutorials/imitation-learning/act",
+  "permalink": "/zh-Hans/docs/tutorials/imitation-learning/act",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/imitation-learning/act.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "数据生成",
+    "permalink": "/zh-Hans/docs/tutorials/imitation-learning/data-generation"
+  },
+  "next": {
+    "title": "Diffusion Policy",
+    "permalink": "/zh-Hans/docs/tutorials/imitation-learning/dp"
+  }
+}

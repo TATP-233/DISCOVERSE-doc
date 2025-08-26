@@ -1,0 +1,24 @@
+{
+  "id": "tutorials/modeling/gaussian-splatting",
+  "title": "3D 高斯溅射 (3D Gaussian Splatting) 模型编辑指南",
+  "description": "1. 引言",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/modeling/gaussian-splatting.md",
+  "sourceDirName": "tutorials/modeling",
+  "slug": "/tutorials/modeling/gaussian-splatting",
+  "permalink": "/zh-Hans/docs/tutorials/modeling/gaussian-splatting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/modeling/gaussian-splatting.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "OpenPI (Open-source Policy Interface)",
+    "permalink": "/zh-Hans/docs/tutorials/imitation-learning/openpi"
+  },
+  "next": {
+    "title": "Mesh2MJCF 工具使用文档",
+    "permalink": "/zh-Hans/docs/tutorials/modeling/mesh2mjcf"
+  }
+}

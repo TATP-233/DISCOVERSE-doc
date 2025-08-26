@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/modeling/gaussian-splatting",
+  "title": "Gaussian Splatting",
+  "description": "This is a placeholder for the English version. Please translate the content from the Chinese document.",
+  "source": "@site/docs/tutorials/modeling/gaussian-splatting.md",
+  "sourceDirName": "tutorials/modeling",
+  "slug": "/tutorials/modeling/gaussian-splatting",
+  "permalink": "/docs/tutorials/modeling/gaussian-splatting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/modeling/gaussian-splatting.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Mesh2MJCF",
+    "permalink": "/docs/tutorials/modeling/mesh2mjcf"
+  },
+  "next": {
+    "title": "XML Editor",
+    "permalink": "/docs/tutorials/modeling/xml-editor"
+  }
+}

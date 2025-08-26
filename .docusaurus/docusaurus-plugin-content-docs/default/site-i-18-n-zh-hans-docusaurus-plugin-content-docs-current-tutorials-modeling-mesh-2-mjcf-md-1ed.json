@@ -1,0 +1,24 @@
+{
+  "id": "tutorials/modeling/mesh2mjcf",
+  "title": "Mesh2MJCF 工具使用文档",
+  "description": "1. 简介",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/modeling/mesh2mjcf.md",
+  "sourceDirName": "tutorials/modeling",
+  "slug": "/tutorials/modeling/mesh2mjcf",
+  "permalink": "/zh-Hans/docs/tutorials/modeling/mesh2mjcf",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/modeling/mesh2mjcf.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "3D 高斯溅射 (3D Gaussian Splatting) 模型编辑指南",
+    "permalink": "/zh-Hans/docs/tutorials/modeling/gaussian-splatting"
+  },
+  "next": {
+    "title": "3D建模与编辑工具",
+    "permalink": "/zh-Hans/docs/tutorials/modeling/overview"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "get-started/quick-start",
+  "title": "Quick Start",
+  "description": "This guide will help you run your first DISCOVERSE simulation example in just a few minutes and experience the core features of the framework.",
+  "source": "@site/docs/get-started/quick-start.md",
+  "sourceDirName": "get-started",
+  "slug": "/get-started/quick-start",
+  "permalink": "/docs/get-started/quick-start",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/get-started/quick-start.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation Guide",
+    "permalink": "/docs/get-started/installation"
+  },
+  "next": {
+    "title": "Basic Concepts",
+    "permalink": "/docs/get-started/basic-concepts"
+  }
+}

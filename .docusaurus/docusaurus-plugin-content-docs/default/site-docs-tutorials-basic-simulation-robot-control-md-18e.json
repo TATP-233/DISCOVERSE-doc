@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/basic-simulation/robot-control",
+  "title": "Robot Control",
+  "description": "This tutorial provides an in-depth introduction to the robot control system in DISCOVERSE, including different control modes, kinematics, trajectory planning, and real-time control.",
+  "source": "@site/docs/tutorials/basic-simulation/robot-control.md",
+  "sourceDirName": "tutorials/basic-simulation",
+  "slug": "/tutorials/basic-simulation/robot-control",
+  "permalink": "/docs/tutorials/basic-simulation/robot-control",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/basic-simulation/robot-control.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Environment Setup",
+    "permalink": "/docs/tutorials/basic-simulation/environment-setup"
+  },
+  "next": {
+    "title": "Sensors Overview",
+    "permalink": "/docs/tutorials/sensors/overview"
+  }
+}

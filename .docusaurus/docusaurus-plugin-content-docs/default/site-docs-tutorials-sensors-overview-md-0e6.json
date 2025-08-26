@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/sensors/overview",
+  "title": "Sensors Overview",
+  "description": "DISCOVERSE provides rich sensor support, including RGB cameras, depth cameras, stereo cameras, and more. This tutorial will guide you through configuring and using various sensors in DISCOVERSE.",
+  "source": "@site/docs/tutorials/sensors/overview.md",
+  "sourceDirName": "tutorials/sensors",
+  "slug": "/tutorials/sensors/overview",
+  "permalink": "/docs/tutorials/sensors/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/sensors/overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Robot Control",
+    "permalink": "/docs/tutorials/basic-simulation/robot-control"
+  },
+  "next": {
+    "title": "Stereo Camera Simulation Details",
+    "permalink": "/docs/tutorials/sensors/stereo-camera"
+  }
+}

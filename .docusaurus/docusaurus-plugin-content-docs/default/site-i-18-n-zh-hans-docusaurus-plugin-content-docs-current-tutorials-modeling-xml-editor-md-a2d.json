@@ -1,0 +1,24 @@
+{
+  "id": "tutorials/modeling/xml-editor",
+  "title": "MuJoCo 场景编辑器 (XML Editor) - DISCOVERSE 模块",
+  "description": "1. 引言",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/modeling/xml-editor.md",
+  "sourceDirName": "tutorials/modeling",
+  "slug": "/tutorials/modeling/xml-editor",
+  "permalink": "/zh-Hans/docs/tutorials/modeling/xml-editor",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/modeling/xml-editor.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "3D建模与编辑工具",
+    "permalink": "/zh-Hans/docs/tutorials/modeling/overview"
+  },
+  "next": {
+    "title": "数据生成概览",
+    "permalink": "/zh-Hans/docs/tutorials/data-generation/overview"
+  }
+}

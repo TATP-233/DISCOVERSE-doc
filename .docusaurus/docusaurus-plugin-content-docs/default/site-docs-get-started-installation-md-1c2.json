@@ -1,0 +1,24 @@
+{
+  "id": "get-started/installation",
+  "title": "Installation Guide",
+  "description": "DISCOVERSE is a unified, modular open-source 3DGS robot simulation framework supporting the Real2Sim2Real learning workflow. This guide will help you install and configure DISCOVERSE on your system.",
+  "source": "@site/docs/get-started/installation.md",
+  "sourceDirName": "get-started",
+  "slug": "/get-started/installation",
+  "permalink": "/docs/get-started/installation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/get-started/installation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "installation",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Quick Start",
+    "permalink": "/docs/get-started/quick-start"
+  }
+}

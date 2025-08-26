@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/imitation-learning/rdt",
+  "title": "RDT (Robotics Diffusion Transformer)",
+  "description": "RDT (Robotics Diffusion Transformer) 是一种结合扩散模型和Transformer的大模型方法，支持多任务统一建模，具有强大的泛化能力。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/imitation-learning/rdt.md",
+  "sourceDirName": "tutorials/imitation-learning",
+  "slug": "/tutorials/imitation-learning/rdt",
+  "permalink": "/zh-Hans/docs/tutorials/imitation-learning/rdt",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/imitation-learning/rdt.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Diffusion Policy",
+    "permalink": "/zh-Hans/docs/tutorials/imitation-learning/dp"
+  },
+  "next": {
+    "title": "OpenPI (Open-source Policy Interface)",
+    "permalink": "/zh-Hans/docs/tutorials/imitation-learning/openpi"
+  }
+}

@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="zh-CN" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-tutorials/modeling/xml-editor" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">MuJoCo 场景编辑器 (XML Editor) - DISCOVERSE 模块 | DISCOVERSE</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://air-discoverse.github.io/zh-Hans/img/discoverse-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://air-discoverse.github.io/zh-Hans/img/discoverse-social-card.jpg"><meta data-rh="true" property="og:url" content="https://air-discoverse.github.io/zh-Hans/docs/tutorials/modeling/xml-editor"><meta data-rh="true" property="og:locale" content="zh_CN"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MuJoCo 场景编辑器 (XML Editor) - DISCOVERSE 模块 | DISCOVERSE"><meta data-rh="true" name="description" content="1. 引言"><meta data-rh="true" property="og:description" content="1. 引言"><link data-rh="true" rel="icon" href="/zh-Hans/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://air-discoverse.github.io/zh-Hans/docs/tutorials/modeling/xml-editor"><link data-rh="true" rel="alternate" href="https://air-discoverse.github.io/zh-Hans/docs/tutorials/modeling/xml-editor" hreflang="zh-CN"><link data-rh="true" rel="alternate" href="https://air-discoverse.github.io/docs/tutorials/modeling/xml-editor" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://air-discoverse.github.io/docs/tutorials/modeling/xml-editor" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"MuJoCo 场景编辑器 (XML Editor) - DISCOVERSE 模块","item":"https://air-discoverse.github.io/zh-Hans/docs/tutorials/modeling/xml-editor"}]}</script><link rel="alternate" type="application/rss+xml" href="/zh-Hans/blog/rss.xml" title="DISCOVERSE RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/zh-Hans/blog/atom.xml" title="DISCOVERSE Atom Feed"><link rel="stylesheet" href="/zh-Hans/assets/css/styles.26b263b9.css">
+<script src="/zh-Hans/assets/js/runtime~main.3cfce8b6.js" defer="defer"></script>
+<script src="/zh-Hans/assets/js/main.79252f42.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="dark";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/zh-Hans/img/logo.svg"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/zh-Hans/"><div class="navbar__logo"><img src="/zh-Hans/img/logo.svg" alt="DISCOVERSE Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/zh-Hans/img/logo.svg" alt="DISCOVERSE Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">DISCOVERSE</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/zh-Hans/docs/get-started/installation">文档</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>简体中文</a><ul class="dropdown__menu"><li><a href="/zh-Hans/docs/tutorials/modeling/xml-editor" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="zh-CN">简体中文</a></li><li><a href="/docs/tutorials/modeling/xml-editor" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en-US">English</a></li></ul></div><a href="https://github.com/TATP-233/DISCOVERSE" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/zh-Hans/docs/get-started/installation">快速开始</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/zh-Hans/docs/tutorials/basic-simulation/environment-setup">教程</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/zh-Hans/docs/tutorials/basic-simulation/environment-setup">基础仿真</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/zh-Hans/docs/tutorials/sensors/stereo-camera">传感器</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/zh-Hans/docs/tutorials/imitation-learning/overview">模仿学习</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/zh-Hans/docs/tutorials/modeling/gaussian-splatting">3D建模与编辑</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/docs/tutorials/modeling/gaussian-splatting">3D 高斯溅射 (3D Gaussian Splatting) 模型编辑指南</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/docs/tutorials/modeling/mesh2mjcf">Mesh2MJCF 工具使用文档</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hans/docs/tutorials/modeling/overview">3D建模与编辑工具</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/zh-Hans/docs/tutorials/modeling/xml-editor">MuJoCo 场景编辑器 (XML Editor) - DISCOVERSE 模块</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/zh-Hans/docs/tutorials/data-generation/overview">数据生成</a></div></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/zh-Hans/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">教程</span></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">3D建模与编辑</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MuJoCo 场景编辑器 (XML Editor) - DISCOVERSE 模块</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>MuJoCo 场景编辑器 (XML Editor) - DISCOVERSE 模块</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-引言">1. 引言<a href="#1-引言" class="hash-link" aria-label="1. 引言的直接链接" title="1. 引言的直接链接">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11-什么是-mujoco-场景编辑器">1.1 什么是 MuJoCo 场景编辑器？<a href="#11-什么是-mujoco-场景编辑器" class="hash-link" aria-label="1.1 什么是 MuJoCo 场景编辑器？的直接链接" title="1.1 什么是 MuJoCo 场景编辑器？的直接链接">​</a></h3>
+<p>MuJoCo 场景编辑器是一款基于 PyQt5 和 OpenGL 开发的图形界面工具，专门用于创建和编辑 <a href="https://mujoco.org/" target="_blank" rel="noopener noreferrer">MuJoCo (Multi-Joint dynamics with Contact)</a> 物理引擎的场景描述文件。MuJoCo 使用一种名为 MJCF (MuJoCo XML Format) 的 XML 기반格式来定义仿真环境中的物体、机器人、光照、纹理等元素及其物理属性。</p>
+<p>该编辑器提供了一个直观的3D可视化界面，使用户能够：</p>
+<ul>
+<li><strong>可视化地构建场景</strong>：直接在3D视图中创建和排列物体。</li>
+<li><strong>编辑物体属性</strong>：调整物体的尺寸、质量、颜色、碰撞特性等。</li>
+<li><strong>管理场景层级</strong>：通过树状结构组织复杂的场景。</li>
+<li><strong>导入和导出 MJCF 文件</strong>：方便地与 MuJoCo 仿真流程集成。</li>
+</ul>
+<p>与手动编写复杂的 MJCF XML 代码相比，这款编辑器极大地简化了场景创建和调试的过程，尤其适合需要快速迭代和可视化验证的用户。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="12-在-discoverse-中的定位">1.2 在 DISCOVERSE 中的定位<a href="#12-在-discoverse-中的定位" class="hash-link" aria-label="1.2 在 DISCOVERSE 中的定位的直接链接" title="1.2 在 DISCOVERSE 中的定位的直接链接">​</a></h3>
+<p>本 MuJoCo 场景编辑器是 <code>DISCOVERSE</code> 项目的一个重要子模块，位于 <code>submodules/XML-Editor/</code> 目录下。它为 <code>DISCOVERSE</code> 中的机器人仿真任务提供了便捷的场景搭建和修改能力，使得研究人员和开发者可以更高效地创建和定制用于机器人学习与控制的仿真环境。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="13-mujoco-和-mjcf-简介">1.3 MuJoCo 和 MJCF 简介<a href="#13-mujoco-和-mjcf-简介" class="hash-link" aria-label="1.3 MuJoCo 和 MJCF 简介的直接链接" title="1.3 MuJoCo 和 MJCF 简介的直接链接">​</a></h3>
+<ul>
+<li><strong>MuJoCo (Multi-Joint dynamics with Contact)</strong>：是一个功能强大、速度快、精度高的物理引擎，广泛应用于机器人学、生物力学、机器学习等领域。它特别擅长处理复杂的接触动力学和多关节系统。</li>
+<li><strong>MJCF (MuJoCo XML Format)</strong>：是 MuJoCo 用于描述仿真场景的标准文件格式。它是一种层级化的 XML 格式，通过不同的标签（如 <code>&lt;worldbody&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;geom&gt;</code>, <code>&lt;joint&gt;</code>, <code>&lt;site&gt;</code>, <code>&lt;tendon&gt;</code>, <code>&lt;actuator&gt;</code> 等）来定义场景的各个组成部分及其属性。MJCF 文件不仅定义了物体的几何形状和外观，还详细描述了它们的物理特性（质量、惯性、摩擦力等）、关节类型和限制、以及传感器和执行器等。</li>
+</ul>
+<p>理解 MJCF 的基本结构和常用标签对于高效使用此编辑器和进行 MuJoCo 仿真至关重要。编辑器生成的输出即为 MJCF 文件，可以直接被 MuJoCo 引擎加载。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-功能特点">2. 功能特点<a href="#2-功能特点" class="hash-link" aria-label="2. 功能特点的直接链接" title="2. 功能特点的直接链接">​</a></h2>
+<ul>
+<li><strong>可视化编辑</strong>：直观的3D视图，实时预览场景效果。</li>
+<li><strong>基础几何体支持</strong>：创建和编辑多种 MJCF 标准几何体类型：<!-- -->
+<ul>
+<li>盒子 (Box)</li>
+<li>球体 (Sphere)</li>
+<li>圆柱体 (Cylinder)</li>
+<li>胶囊体 (Capsule)</li>
+<li>平面 (Plane)</li>
+<li>（注意：编辑器可能支持更多或部分 MJCF 几何体，具体以实际版本为准）</li>
+</ul>
+</li>
+<li><strong>变换工具</strong>：完整的对象变换功能：<!-- -->
+<ul>
+<li>平移 (Translate)</li>
+<li>旋转 (Rotate)</li>
+<li>缩放 (Scale)</li>
+<li>支持全局/局部坐标系切换，方便精确调整。</li>
+</ul>
+</li>
+<li><strong>属性编辑</strong>：实时编辑对象属性，如：<!-- -->
+<ul>
+<li>几何属性 (尺寸、位置、旋转)</li>
+<li>材质属性 (颜色、反射率、透明度)</li>
+<li>（物理属性如质量、惯性等也可能支持，取决于编辑器具体实现）</li>
+</ul>
+</li>
+<li><strong>层级结构管理</strong>：通过树状视图直观地管理场景中 <code>&lt;worldbody&gt;</code> 下的 <code>&lt;body&gt;</code> 元素层级关系，支持父子关系设定和组操作。</li>
+<li><strong>导入/导出</strong>：支持标准 MuJoCo MJCF XML 格式的导入和导出。</li>
+<li><strong>射线投射系统</strong>：用于在3D视图中精确地选择对象。</li>
+<li><strong>自定义控制器 (Gizmo)</strong>：为平移、旋转、缩放等操作模式提供专用的3D交互控制器。</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-安装指南">3. 安装指南<a href="#3-安装指南" class="hash-link" aria-label="3. 安装指南的直接链接" title="3. 安装指南的直接链接">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="31-系统要求">3.1 系统要求<a href="#31-系统要求" class="hash-link" aria-label="3.1 系统要求的直接链接" title="3.1 系统要求的直接链接">​</a></h3>
+<ul>
+<li>操作系统：Windows / macOS / Linux</li>
+<li>Python 版本：&gt;= 3.7</li>
+<li>显卡：支持 OpenGL 3.3 或更高版本</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="32-依赖库">3.2 依赖库<a href="#32-依赖库" class="hash-link" aria-label="3.2 依赖库的直接链接" title="3.2 依赖库的直接链接">​</a></h3>
+<p>确保已安装以下 Python 库：</p>
+<ul>
+<li>PyQt5 &gt;= 5.15.0</li>
+<li>NumPy &gt;= 1.20.0</li>
+<li>PyOpenGL &gt;= 3.1.0</li>
+<li>PyOpenGL_accelerate &gt;= 3.1.0 (可选，但建议安装以提高性能)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="33-安装步骤">3.3 安装步骤<a href="#33-安装步骤" class="hash-link" aria-label="3.3 安装步骤的直接链接" title="3.3 安装步骤的直接链接">​</a></h3>
+<p>由于此编辑器是 <code>DISCOVERSE</code> 的子模块，其代码已包含在 <code>DISCOVERSE/submodules/XML-Editor/</code> 目录中。</p>
+<ol>
+<li>
+<p><strong>确保子模块已检出</strong>：
+如果在克隆 <code>DISCOVERSE</code> 仓库时没有使用 <code>--recurse-submodules</code> 选项，或者子模块内容为空，请在 <code>DISCOVERSE</code> 仓库的根目录下执行以下命令来初始化并拉取子模块代码：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token function" style="color:rgb(80, 250, 123)">git</span><span class="token plain"> submodule update </span><span class="token parameter variable" style="color:rgb(189, 147, 249);font-style:italic">--init</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(189, 147, 249);font-style:italic">--recursive</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>进入子模块目录并安装依赖</strong>：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token builtin class-name" style="color:rgb(189, 147, 249)">cd</span><span class="token plain"> submodules/XML-Editor</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">pip </span><span class="token function" style="color:rgb(80, 250, 123)">install</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(189, 147, 249);font-style:italic">-r</span><span class="token plain"> requirements.txt</span><br></span></code></pre></div></div>
+<p>建议在您的 Python 虚拟环境中执行此操作。</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-启动与界面概览">4. 启动与界面概览<a href="#4-启动与界面概览" class="hash-link" aria-label="4. 启动与界面概览的直接链接" title="4. 启动与界面概览的直接链接">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="41-启动程序">4.1 启动程序<a href="#41-启动程序" class="hash-link" aria-label="4.1 启动程序的直接链接" title="4.1 启动程序的直接链接">​</a></h3>
+<p>在已安装依赖并位于 <code>DISCOVERSE/submodules/XML-Editor/</code> 目录下时，通过以下命令启动编辑器：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">python </span><span class="token parameter variable" style="color:rgb(189, 147, 249);font-style:italic">-m</span><span class="token plain"> xml_editor.main</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="42-主界面介绍">4.2 主界面介绍<a href="#42-主界面介绍" class="hash-link" aria-label="4.2 主界面介绍的直接链接" title="4.2 主界面介绍的直接链接">​</a></h3>
+<p>编辑器启动后，您会看到一个包含以下主要区域的窗口：</p>
+<ul>
+<li><strong>3D 视图 (Central Widget)</strong>：占据窗口中心区域，用于显示和交互式编辑您的 MuJoCo 场景。</li>
+<li><strong>控制面板 (Control Panel - 通常在左侧)</strong>：<!-- -->
+<ul>
+<li><strong>创建几何体 (Create Geometry)</strong>：列出可供拖拽到3D视图中创建的几何体按钮（如立方体、球体等）。</li>
+<li><strong>操作模式 (Operation Mode)</strong>：切换鼠标在3D视图中的行为，如观察 (Observe)、平移 (Translate)、旋转 (Rotate)、缩放 (Scale)。</li>
+<li><strong>坐标系 (Coordinate System)</strong>：切换变换工具使用全局坐标系还是局部坐标系。</li>
+<li><strong>存档管理 (Save Management)</strong>：提供临时存档和加载功能。</li>
+</ul>
+</li>
+<li><strong>层级结构 (Hierarchy - 通常在左侧)</strong>：以树状列表显示场景中所有对象的父子关系（对应 MJCF 中的 <code>&lt;body&gt;</code> 层级）。</li>
+<li><strong>属性面板 (Properties - 通常在右侧)</strong>：显示当前选中对象的详细属性，并允许您编辑这些属性。</li>
+<li><strong>菜单栏 (Menu Bar - 顶部)</strong>：提供文件操作（新建、打开、保存）、编辑操作（撤销、重做、复制、粘贴、删除）等功能。</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-详细使用说明">5. 详细使用说明<a href="#5-详细使用说明" class="hash-link" aria-label="5. 详细使用说明的直接链接" title="5. 详细使用说明的直接链接">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="51-场景导航-3d-视图">5.1 场景导航 (3D 视图)<a href="#51-场景导航-3d-视图" class="hash-link" aria-label="5.1 场景导航 (3D 视图)的直接链接" title="5.1 场景导航 (3D 视图)的直接链接">​</a></h3>
+<p>在 <strong>观察 (Observe)</strong> 模式下（通常是默认模式，或在控制面板中选择）：</p>
+<ul>
+<li><strong>旋转视图</strong>：按住鼠标左键并拖动。</li>
+<li><strong>平移视图</strong>：按住鼠标右键并拖动。</li>
+<li><strong>缩放视图</strong>：滚动鼠标滚轮。</li>
+<li><strong>取消选择</strong>：点击场景空白处或按 <code>Esc</code> 键。</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="52-创建几何体">5.2 创建几何体<a href="#52-创建几何体" class="hash-link" aria-label="5.2 创建几何体的直接链接" title="5.2 创建几何体的直接链接">​</a></h3>
+<ul>
+<li><strong>方法</strong>：在左侧的 <strong>&quot;控制面板&quot;</strong> 中找到 <strong>&quot;创建几何体&quot;</strong> 部分。这里列出了各种基础几何体类型。</li>
+<li><strong>操作</strong>：<!-- -->
+<ol>
+<li>将鼠标指针悬停在您想创建的几何体按钮上（例如，&quot;立方体&quot;）。</li>
+<li>按住鼠标左键。</li>
+<li>将鼠标拖拽到主窗口中间的 <strong>3D 视图</strong> 区域。</li>
+<li>松开鼠标左键，几何体将被放置在鼠标指针指示的位置。</li>
+</ol>
+</li>
+<li><strong>提示</strong>：新创建的几何体将自动被选中，其属性会显示在右侧的属性面板中。</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="53-对象选择与编辑">5.3 对象选择与编辑<a href="#53-对象选择与编辑" class="hash-link" aria-label="5.3 对象选择与编辑的直接链接" title="5.3 对象选择与编辑的直接链接">​</a></h3>
+<ul>
+<li><strong>选择对象</strong>：<!-- -->
+<ul>
+<li>在3D视图中：左键点击场景中的对象。</li>
+<li>在层级结构树中：左键点击对象名称。</li>
+</ul>
+</li>
+<li><strong>多选对象</strong>：按住 <code>Ctrl</code> 键，然后依次点击多个对象（在3D视图或层级树中）。</li>
+<li><strong>查看属性</strong>：选中对象后，在右侧 <strong>&quot;属性&quot;</strong> 面板中查看其详细属性。</li>
+<li><strong>编辑属性</strong>：在属性面板中直接修改参数值，更改会实时反映在3D视图中。常见可编辑属性包括：<!-- -->
+<ul>
+<li><strong>名称 (Name)</strong>: 对象的唯一标识符。</li>
+<li><strong>可见性 (Visible)</strong>: 控制对象是否在视图中渲染（通常不影响物理特性）。</li>
+<li><strong>位置 (Position)</strong>: X, Y, Z 坐标。</li>
+<li><strong>旋转 (Rotation)</strong>: X, Y, Z 欧拉角（单位：度）。</li>
+<li><strong>尺寸/缩放 (Scale/Size)</strong>:<!-- -->
+<ul>
+<li><strong>立方体 (Box)</strong>: X, Y, Z 轴的半尺寸。</li>
+<li><strong>球体 (Sphere)</strong>: 半径 (Radius)。</li>
+<li><strong>圆柱体 (Cylinder)</strong>, <strong>胶囊体 (Capsule)</strong>: 半径 (Radius) 和半长度 (Half-length/Height)。</li>
+<li><strong>平面 (Plane)</strong>: 尺寸通常由其纹理或默认设置决定，可能不可直接编辑或以特定方式编辑。</li>
+</ul>
+</li>
+<li><strong>颜色 (Color)</strong>: 点击颜色选择器修改。</li>
+<li><strong>透明度 (Opacity/Alpha)</strong>: 调整对象的透明度。</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="54-变换工具-gizmo">5.4 变换工具 (Gizmo)<a href="#54-变换工具-gizmo" class="hash-link" aria-label="5.4 变换工具 (Gizmo)的直接链接" title="5.4 变换工具 (Gizmo)的直接链接">​</a></h3>
+<p>编辑器使用 3D 控制器 (Gizmo) 来辅助对象的平移、旋转和缩放。</p>
+<ul>
+<li><strong>选择操作模式</strong>：<!-- -->
+<ul>
+<li>在左侧 <strong>&quot;控制面板&quot;</strong> 的 <strong>&quot;操作模式&quot;</strong> 部分，选择：<!-- -->
+<ul>
+<li><strong>观察 (Observe)</strong>: 仅用于导航场景，不操作对象。</li>
+<li><strong>平移 (Translate)</strong>: 移动选中的对象。</li>
+<li><strong>旋转 (Rotate)</strong>: 旋转选中的对象。</li>
+<li><strong>缩放 (Scale)</strong>: 调整选中对象的大小。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>使用 Gizmo</strong>：<!-- -->
+<ul>
+<li>选中一个对象并进入平移、旋转或缩放模式后，该对象中心会出现一个 Gizmo。</li>
+<li>Gizmo 通常由红 (X轴)、绿 (Y轴)、蓝 (Z轴) 三个轴组成。</li>
+<li><strong>平移</strong>：点击并拖动 Gizmo 的<strong>轴柄</strong>，沿对应轴向移动对象。</li>
+<li><strong>旋转</strong>：点击并拖动 Gizmo 的<strong>圆环</strong>，绕对应轴旋转对象。</li>
+<li><strong>缩放</strong>：点击并拖动 Gizmo 的<strong>轴末端方块</strong>，沿对应轴缩放对象。</li>
+<li>当鼠标悬停在 Gizmo 的某个可操作部分上时，该部分会高亮显示。</li>
+</ul>
+</li>
+<li><strong>全局与局部坐标系</strong>：<!-- -->
+<ul>
+<li><strong>切换</strong>：<!-- -->
+<ul>
+<li>点击 <strong>&quot;控制面板&quot;</strong> &gt; <strong>&quot;操作模式&quot;</strong> 下方的 <strong>&quot;局部坐标系 (Local)&quot; / &quot;全局坐标系 (Global)&quot;</strong> 按钮。</li>
+<li>或者，在 3D 视图获得焦点时，按 <strong>空格键 (Spacebar)</strong> 进行切换。</li>
+</ul>
+</li>
+<li><strong>区别</strong>：<!-- -->
+<ul>
+<li><strong>局部坐标系 (Local)</strong>：Gizmo 的轴向会跟随对象自身的旋转方向。</li>
+<li><strong>全局坐标系 (Global)</strong>：Gizmo 的轴向始终与世界坐标系对齐。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="55-层级结构管理-hierarchy-panel">5.5 层级结构管理 (Hierarchy Panel)<a href="#55-层级结构管理-hierarchy-panel" class="hash-link" aria-label="5.5 层级结构管理 (Hierarchy Panel)的直接链接" title="5.5 层级结构管理 (Hierarchy Panel)的直接链接">​</a></h3>
+<p>左侧的 <strong>&quot;层级结构 (Hierarchy)&quot;</strong> 面板以树状视图展示了场景中所有对象的父子关系，这对应 MJCF 中 <code>&lt;body&gt;</code> 元素的嵌套。</p>
+<ul>
+<li><strong>理解层级</strong>:<!-- -->
+<ul>
+<li><strong>父节点 (Parent)</strong>: 通常是一个 <strong>组 (Group)</strong> (在 MJCF 中是一个包含其他 <code>&lt;body&gt;</code> 或 <code>&lt;geom&gt;</code> 的 <code>&lt;body&gt;</code> 元素)。父节点的变换会影响其所有子节点。</li>
+<li><strong>子节点 (Child)</strong>: 隶属于某个父节点的对象。其坐标和旋转是相对于父节点的。</li>
+</ul>
+</li>
+<li><strong>查看与选择</strong>:<!-- -->
+<ul>
+<li>点击树中的项来选择对象。</li>
+<li>点击组节点旁的 <strong>▶</strong> (展开) 或 <strong>▼</strong> (折叠) 符号可显示或隐藏其子对象。</li>
+</ul>
+</li>
+<li><strong>创建对象 (通过层级树)</strong>:<!-- -->
+<ul>
+<li><strong>创建顶层对象/组</strong>: 在层级树面板的<strong>空白区域</strong>右键点击 -&gt; <strong>&quot;新建 (New)&quot;</strong> -&gt; 选择类型。</li>
+<li><strong>创建子对象/组</strong>: 在一个<strong>组节点</strong>上右键点击 -&gt; <strong>&quot;新建子对象 (New Child)&quot;</strong> -&gt; 选择类型。</li>
+</ul>
+</li>
+<li><strong>组合对象 (Grouping)</strong>:<!-- -->
+<ol>
+<li>使用 <code>Ctrl</code>+点击 选择多个对象。</li>
+<li>在任一选中对象上右键点击 -&gt; <strong>&quot;组合到新组 (Group into New Group)&quot;</strong>。</li>
+</ol>
+</li>
+<li><strong>修改层级 (Reparenting - 拖放)</strong>:<!-- -->
+<ol>
+<li>在层级树中，用鼠标左键<strong>点击并按住</strong>要移动的对象。</li>
+<li><strong>拖拽</strong>对象：<!-- -->
+<ul>
+<li>到另一个组节点上：成为该组的子节点。</li>
+<li>到一个非组几何体上：通常会创建一个新组，并将两者放入其中。</li>
+<li>到层级树的空白区域：移动到场景顶层。</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><strong>复制与粘贴</strong>:<!-- -->
+<ul>
+<li><strong>复制</strong>: 选中对象 -&gt; 右键 -&gt; <strong>&quot;复制 (Copy)&quot;</strong> (或 <code>Ctrl+C</code>)。</li>
+<li><strong>粘贴</strong>:<!-- -->
+<ul>
+<li>在目标组节点上右键 -&gt; <strong>&quot;粘贴到这个组 (Paste into this group)&quot;</strong>。</li>
+<li>在空白区域右键 -&gt; <strong>&quot;粘贴 (Paste)&quot;</strong> (或 <code>Ctrl+V</code>)，通常粘贴到顶层。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>删除</strong>: 选中对象 -&gt; 按 <code>Delete</code> 键 或 右键 -&gt; <strong>&quot;删除 (Delete)&quot;</strong>。</li>
+<li><strong>重命名</strong>: 右键点击单个对象 -&gt; <strong>&quot;重命名 (Rename)&quot;</strong>，或在属性面板中修改名称。</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="56-主菜单栏功能">5.6 主菜单栏功能<a href="#56-主菜单栏功能" class="hash-link" aria-label="5.6 主菜单栏功能的直接链接" title="5.6 主菜单栏功能的直接链接">​</a></h3>
+<ul>
+<li><strong>文件 (File)</strong>:<!-- -->
+<ul>
+<li><strong>新建 (New)</strong> (<code>Ctrl+N</code>): 创建空场景。</li>
+<li><strong>打开 (Open)...</strong> (<code>Ctrl+O</code>): 加载 MJCF XML 文件。</li>
+<li><strong>保存 (Save)</strong> (<code>Ctrl+S</code>): 保存当前场景到原文件。</li>
+<li><strong>另存为 (Save As)...</strong> (<code>Shift+Ctrl+S</code>): 将场景另存为新的 MJCF XML 文件。</li>
+<li><strong>退出 (Exit)</strong> (<code>Ctrl+Q</code>): 关闭编辑器。</li>
+</ul>
+</li>
+<li><strong>编辑 (Edit)</strong>:<!-- -->
+<ul>
+<li><strong>撤销 (Undo)</strong> (<code>Ctrl+Z</code>): 撤销上一步操作。</li>
+<li><strong>重做 (Redo)</strong> (<code>Ctrl+Y</code> / <code>Shift+Ctrl+Z</code>): 恢复被撤销的操作。</li>
+<li><strong>复制 (Copy)</strong> (<code>Ctrl+C</code>)</li>
+<li><strong>粘贴 (Paste)</strong> (<code>Ctrl+V</code>)</li>
+<li><strong>删除 (Delete)</strong> (<code>Delete</code> 键)</li>
+</ul>
+</li>
+<li><strong>视图 (View)</strong>:<!-- -->
+<ul>
+<li><strong>重置视图 (Reset View)</strong>: 恢复3D视图摄像机和面板布局到默认状态。</li>
+</ul>
+</li>
+<li><strong>帮助 (Help)</strong>:<!-- -->
+<ul>
+<li><strong>关于 (About)</strong>: 显示编辑器版本等信息。</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="57-撤销与重做">5.7 撤销与重做<a href="#57-撤销与重做" class="hash-link" aria-label="5.7 撤销与重做的直接链接" title="5.7 撤销与重做的直接链接">​</a></h3>
+<ul>
+<li>编辑器会自动记录大部分操作（创建、删除、变换、属性修改、层级变更等）。</li>
+<li>使用菜单栏 <strong>&quot;编辑 (Edit)&quot;</strong> &gt; <strong>&quot;撤销 (Undo)&quot;</strong> 或 <strong>&quot;重做 (Redo)&quot;</strong>，或对应快捷键。</li>
+<li>注意：关闭程序时，撤销/重做历史会清空。</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="58-存档管理-json-save-points">5.8 存档管理 (JSON Save Points)<a href="#58-存档管理-json-save-points" class="hash-link" aria-label="5.8 存档管理 (JSON Save Points)的直接链接" title="5.8 存档管理 (JSON Save Points)的直接链接">​</a></h3>
+<p>此功能用于快速创建场景的临时存档点 (JSON格式)，不同于标准的 MJCF XML 保存。</p>
+<ul>
+<li><strong>位置</strong>: 左侧 <strong>&quot;控制面板&quot;</strong> 底部的 <strong>&quot;存档管理&quot;</strong>。</li>
+<li><strong>创建存档点 (Create Save Point)</strong>: 点击按钮，当前场景状态保存为带时间戳的 JSON 文件 (通常在 <code>submodules/XML-Editor/save/</code> 目录下)。</li>
+<li><strong>查看存档 (View Saves)</strong>: 点击按钮，弹出对话框列出最近的 JSON 存档。<!-- -->
+<ul>
+<li><strong>加载存档</strong>: 在列表中选择存档并点击 <strong>&quot;加载 (Load)&quot;</strong> 或双击存档。</li>
+<li><strong>注意</strong>: 加载存档会覆盖当前场景，此操作通常不可撤销。</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="59-操作示例">5.9 操作示例<a href="#59-操作示例" class="hash-link" aria-label="5.9 操作示例的直接链接" title="5.9 操作示例的直接链接">​</a></h3>
+<ol>
+<li><strong>启动编辑器</strong>：<code>cd DISCOVERSE/submodules/XML-Editor &amp;&amp; python -m xml_editor.main</code></li>
+<li><strong>创建基础物体</strong>：<!-- -->
+<ul>
+<li>从 <strong>控制面板</strong> &gt; <strong>创建几何体</strong> 拖拽一个 <strong>&quot;平面 (Plane)&quot;</strong> 到3D视图作为地面。</li>
+<li>在 <strong>属性面板</strong> 中调整其名称 (e.g., &quot;ground_plane&quot;)、尺寸和颜色。</li>
+<li>拖拽一个 <strong>&quot;立方体 (Box)&quot;</strong>，放置在地面上。修改其名称、颜色。</li>
+</ul>
+</li>
+<li><strong>变换物体</strong>：<!-- -->
+<ul>
+<li>选中立方体。</li>
+<li>在 <strong>控制面板</strong> &gt; <strong>操作模式</strong> 中选择 <strong>&quot;旋转 (Rotate)&quot;</strong>。</li>
+<li>使用 <strong>Gizmo</strong> 绕其局部Y轴旋转。</li>
+<li>切换到 <strong>&quot;平移 (Translate)&quot;</strong> 模式，移动立方体。</li>
+<li>尝试切换 <strong>&quot;局部/全局坐标系&quot;</strong> 并观察 Gizmo 行为。</li>
+</ul>
+</li>
+<li><strong>层级管理</strong>：<!-- -->
+<ul>
+<li>创建另一个物体，例如一个 <strong>&quot;球体 (Sphere)&quot;</strong>。</li>
+<li>在 <strong>层级结构</strong> 面板中，按住 <code>Ctrl</code> 键选中立方体和球体。</li>
+<li>右键点击选中项 -&gt; <strong>&quot;组合到新组 (Group into New Group)&quot;</strong>。</li>
+<li>重命名新创建的组 (e.g., &quot;dynamic_objects_group&quot;)。</li>
+<li>选中该组，使用平移/旋转工具操作整个组。</li>
+</ul>
+</li>
+<li><strong>属性编辑</strong>：<!-- -->
+<ul>
+<li>选中任意物体或组。</li>
+<li>在 <strong>属性面板</strong> 中修改其位置、旋转、颜色、透明度等参数。</li>
+</ul>
+</li>
+<li><strong>文件操作</strong>：<!-- -->
+<ul>
+<li><strong>保存场景</strong>: <strong>文件 (File)</strong> -&gt; <strong>另存为 (Save As)...</strong> -&gt; 输入文件名 (e.g., <code>my_custom_scene.xml</code>)。</li>
+<li>(可选) <strong>创建存档点</strong>: <strong>控制面板</strong> -&gt; <strong>创建存档点</strong>。</li>
+<li>(可选) <strong>加载存档</strong>: <strong>控制面板</strong> -&gt; <strong>查看存档</strong> -&gt; 选择并加载。</li>
+</ul>
+</li>
+<li><strong>最终检查</strong>：加载保存的 <code>my_custom_scene.xml</code> 到 MuJoCo 仿真器中，检查场景是否符合预期。</li>
+</ol>
+<hr>
+<p><em>希望这份指南能帮助您更好地在 DISCOVERSE 项目中使用 MuJoCo 场景编辑器！</em></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/modeling/xml-editor.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/zh-Hans/docs/tutorials/modeling/overview"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">3D建模与编辑工具</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/zh-Hans/docs/tutorials/data-generation/overview"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">数据生成概览</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-引言" class="table-of-contents__link toc-highlight">1. 引言</a><ul><li><a href="#11-什么是-mujoco-场景编辑器" class="table-of-contents__link toc-highlight">1.1 什么是 MuJoCo 场景编辑器？</a></li><li><a href="#12-在-discoverse-中的定位" class="table-of-contents__link toc-highlight">1.2 在 DISCOVERSE 中的定位</a></li><li><a href="#13-mujoco-和-mjcf-简介" class="table-of-contents__link toc-highlight">1.3 MuJoCo 和 MJCF 简介</a></li></ul></li><li><a href="#2-功能特点" class="table-of-contents__link toc-highlight">2. 功能特点</a></li><li><a href="#3-安装指南" class="table-of-contents__link toc-highlight">3. 安装指南</a><ul><li><a href="#31-系统要求" class="table-of-contents__link toc-highlight">3.1 系统要求</a></li><li><a href="#32-依赖库" class="table-of-contents__link toc-highlight">3.2 依赖库</a></li><li><a href="#33-安装步骤" class="table-of-contents__link toc-highlight">3.3 安装步骤</a></li></ul></li><li><a href="#4-启动与界面概览" class="table-of-contents__link toc-highlight">4. 启动与界面概览</a><ul><li><a href="#41-启动程序" class="table-of-contents__link toc-highlight">4.1 启动程序</a></li><li><a href="#42-主界面介绍" class="table-of-contents__link toc-highlight">4.2 主界面介绍</a></li></ul></li><li><a href="#5-详细使用说明" class="table-of-contents__link toc-highlight">5. 详细使用说明</a><ul><li><a href="#51-场景导航-3d-视图" class="table-of-contents__link toc-highlight">5.1 场景导航 (3D 视图)</a></li><li><a href="#52-创建几何体" class="table-of-contents__link toc-highlight">5.2 创建几何体</a></li><li><a href="#53-对象选择与编辑" class="table-of-contents__link toc-highlight">5.3 对象选择与编辑</a></li><li><a href="#54-变换工具-gizmo" class="table-of-contents__link toc-highlight">5.4 变换工具 (Gizmo)</a></li><li><a href="#55-层级结构管理-hierarchy-panel" class="table-of-contents__link toc-highlight">5.5 层级结构管理 (Hierarchy Panel)</a></li><li><a href="#56-主菜单栏功能" class="table-of-contents__link toc-highlight">5.6 主菜单栏功能</a></li><li><a href="#57-撤销与重做" class="table-of-contents__link toc-highlight">5.7 撤销与重做</a></li><li><a href="#58-存档管理-json-save-points" class="table-of-contents__link toc-highlight">5.8 存档管理 (JSON Save Points)</a></li><li><a href="#59-操作示例" class="table-of-contents__link toc-highlight">5.9 操作示例</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/docs/get-started/installation">快速开始</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/docs/get-started/basic-concepts">基本概念</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/docs/tutorials/basic-simulation/overview">教程</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社区</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/TATP-233/DISCOVERSE/discussions" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub Discussions<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/TATP-233/DISCOVERSE/issues" target="_blank" rel="noopener noreferrer" class="footer__link-item">Issues<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/TATP-233/DISCOVERSE" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">资源</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://air-discoverse.github.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Paper<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/TATP-233/DISCOVERSE" target="_blank" rel="noopener noreferrer" class="footer__link-item">Main Repository<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/TATP-233/DISCOVERSE/releases" target="_blank" rel="noopener noreferrer" class="footer__link-item">Changelog<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 DISCOVERSE Team. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

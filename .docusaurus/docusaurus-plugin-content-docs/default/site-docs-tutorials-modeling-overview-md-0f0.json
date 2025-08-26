@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/modeling/overview",
+  "title": "Modeling Overview",
+  "description": "This is a placeholder for the English version. Please translate the content from the Chinese document.",
+  "source": "@site/docs/tutorials/modeling/overview.md",
+  "sourceDirName": "tutorials/modeling",
+  "slug": "/tutorials/modeling/overview",
+  "permalink": "/docs/tutorials/modeling/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/modeling/overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "OpenPI (Open-source Policy Interface)",
+    "permalink": "/docs/tutorials/imitation-learning/openpi"
+  },
+  "next": {
+    "title": "Mesh2MJCF",
+    "permalink": "/docs/tutorials/modeling/mesh2mjcf"
+  }
+}

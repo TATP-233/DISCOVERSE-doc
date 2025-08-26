@@ -1,0 +1,133 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/zh-Hans/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/zh-Hans/docs",
+          "mainDocId": "get-started/installation",
+          "docs": [
+            {
+              "id": "get-started/basic-concepts",
+              "path": "/zh-Hans/docs/get-started/basic-concepts",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "get-started/installation",
+              "path": "/zh-Hans/docs/get-started/installation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "get-started/quick-start",
+              "path": "/zh-Hans/docs/get-started/quick-start",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "get-started/real2sim",
+              "path": "/zh-Hans/docs/get-started/real2sim",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/basic-simulation/environment-setup",
+              "path": "/zh-Hans/docs/tutorials/basic-simulation/environment-setup",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/basic-simulation/overview",
+              "path": "/zh-Hans/docs/tutorials/basic-simulation/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/basic-simulation/robot-control",
+              "path": "/zh-Hans/docs/tutorials/basic-simulation/robot-control",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/data-generation/domain-randomization",
+              "path": "/zh-Hans/docs/tutorials/data-generation/domain-randomization",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/data-generation/overview",
+              "path": "/zh-Hans/docs/tutorials/data-generation/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/imitation-learning/act",
+              "path": "/zh-Hans/docs/tutorials/imitation-learning/act",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/imitation-learning/data-generation",
+              "path": "/zh-Hans/docs/tutorials/imitation-learning/data-generation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/imitation-learning/dp",
+              "path": "/zh-Hans/docs/tutorials/imitation-learning/dp",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/imitation-learning/openpi",
+              "path": "/zh-Hans/docs/tutorials/imitation-learning/openpi",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/imitation-learning/overview",
+              "path": "/zh-Hans/docs/tutorials/imitation-learning/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/imitation-learning/rdt",
+              "path": "/zh-Hans/docs/tutorials/imitation-learning/rdt",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/modeling/gaussian-splatting",
+              "path": "/zh-Hans/docs/tutorials/modeling/gaussian-splatting",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/modeling/mesh2mjcf",
+              "path": "/zh-Hans/docs/tutorials/modeling/mesh2mjcf",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/modeling/overview",
+              "path": "/zh-Hans/docs/tutorials/modeling/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/modeling/xml-editor",
+              "path": "/zh-Hans/docs/tutorials/modeling/xml-editor",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/sensors/overview",
+              "path": "/zh-Hans/docs/tutorials/sensors/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorials/sensors/stereo-camera",
+              "path": "/zh-Hans/docs/tutorials/sensors/stereo-camera",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/zh-Hans/docs/get-started/installation",
+                "label": "get-started/installation"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

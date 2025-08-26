@@ -1,0 +1,24 @@
+{
+  "id": "tutorials/basic-simulation/overview",
+  "title": "基础仿真概览",
+  "description": "欢迎来到DISCOVERSE基础仿真教程！本教程将带您了解如何在DISCOVERSE中创建和运行机器人仿真。DISCOVERSE是一个基于MuJoCo物理引擎的高保真机器人仿真平台，支持高斯渲染(3D Gaussian Splatting)技术。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/basic-simulation/overview.md",
+  "sourceDirName": "tutorials/basic-simulation",
+  "slug": "/tutorials/basic-simulation/overview",
+  "permalink": "/zh-Hans/docs/tutorials/basic-simulation/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/basic-simulation/overview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "环境设置",
+    "permalink": "/zh-Hans/docs/tutorials/basic-simulation/environment-setup"
+  },
+  "next": {
+    "title": "机器人控制",
+    "permalink": "/zh-Hans/docs/tutorials/basic-simulation/robot-control"
+  }
+}

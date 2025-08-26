@@ -1,0 +1,24 @@
+{
+  "id": "tutorials/modeling/overview",
+  "title": "3D建模与编辑工具",
+  "description": "DISCOVERSE 提供了一套完整的3D建模和编辑工具，帮助用户创建、转换和编辑仿真环境中的3D模型。这些工具涵盖了从网格转换到场景编辑，再到先进的3D高斯溅射模型处理的完整工作流程。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/modeling/overview.md",
+  "sourceDirName": "tutorials/modeling",
+  "slug": "/tutorials/modeling/overview",
+  "permalink": "/zh-Hans/docs/tutorials/modeling/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/modeling/overview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Mesh2MJCF 工具使用文档",
+    "permalink": "/zh-Hans/docs/tutorials/modeling/mesh2mjcf"
+  },
+  "next": {
+    "title": "MuJoCo 场景编辑器 (XML Editor) - DISCOVERSE 模块",
+    "permalink": "/zh-Hans/docs/tutorials/modeling/xml-editor"
+  }
+}

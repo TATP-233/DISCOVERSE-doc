@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/modeling/xml-editor",
+  "title": "XML Editor",
+  "description": "This is a placeholder for the English version. Please translate the content from the Chinese document.",
+  "source": "@site/docs/tutorials/modeling/xml-editor.md",
+  "sourceDirName": "tutorials/modeling",
+  "slug": "/tutorials/modeling/xml-editor",
+  "permalink": "/docs/tutorials/modeling/xml-editor",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/modeling/xml-editor.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gaussian Splatting",
+    "permalink": "/docs/tutorials/modeling/gaussian-splatting"
+  },
+  "next": {
+    "title": "Domain Randomization Techniques",
+    "permalink": "/docs/tutorials/data-generation/domain-randomization"
+  }
+}

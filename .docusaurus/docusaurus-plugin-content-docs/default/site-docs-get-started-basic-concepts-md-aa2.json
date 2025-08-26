@@ -1,0 +1,27 @@
+{
+  "id": "get-started/basic-concepts",
+  "title": "Basic Concepts",
+  "description": "This document introduces the core concepts and architecture of the DISCOVERSE framework, helping you understand this unified, modular 3DGS robot simulation platform in depth.",
+  "source": "@site/docs/get-started/basic-concepts.md",
+  "sourceDirName": "get-started",
+  "slug": "/get-started/basic-concepts",
+  "permalink": "/docs/get-started/basic-concepts",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/get-started/basic-concepts.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quick Start",
+    "permalink": "/docs/get-started/quick-start"
+  },
+  "next": {
+    "title": "Real2Sim Asset Generation",
+    "permalink": "/docs/get-started/real2sim"
+  }
+}

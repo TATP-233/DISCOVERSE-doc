@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/imitation-learning/openpi",
+  "title": "OpenPI (Open-source Policy Interface)",
+  "description": "OpenPI is a policy fine-tuning method based on pre-trained models, enabling rapid prototyping and few-shot learning using pre-trained models.",
+  "source": "@site/docs/tutorials/imitation-learning/openpi.md",
+  "sourceDirName": "tutorials/imitation-learning",
+  "slug": "/tutorials/imitation-learning/openpi",
+  "permalink": "/docs/tutorials/imitation-learning/openpi",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/imitation-learning/openpi.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "RDT (Robotics Diffusion Transformer)",
+    "permalink": "/docs/tutorials/imitation-learning/rdt"
+  },
+  "next": {
+    "title": "Modeling Overview",
+    "permalink": "/docs/tutorials/modeling/overview"
+  }
+}

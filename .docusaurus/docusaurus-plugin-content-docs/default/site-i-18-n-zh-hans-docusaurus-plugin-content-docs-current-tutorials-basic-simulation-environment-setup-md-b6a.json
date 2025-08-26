@@ -1,0 +1,24 @@
+{
+  "id": "tutorials/basic-simulation/environment-setup",
+  "title": "环境设置",
+  "description": "本教程将详细介绍如何配置DISCOVERSE仿真环境，包括各种设置选项、性能优化和故障排除。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/basic-simulation/environment-setup.md",
+  "sourceDirName": "tutorials/basic-simulation",
+  "slug": "/tutorials/basic-simulation/environment-setup",
+  "permalink": "/zh-Hans/docs/tutorials/basic-simulation/environment-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/basic-simulation/environment-setup.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Real2Sim资产生成",
+    "permalink": "/zh-Hans/docs/get-started/real2sim"
+  },
+  "next": {
+    "title": "基础仿真概览",
+    "permalink": "/zh-Hans/docs/tutorials/basic-simulation/overview"
+  }
+}

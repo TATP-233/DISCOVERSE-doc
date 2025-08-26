@@ -1,0 +1,27 @@
+{
+  "id": "get-started/quick-start",
+  "title": "快速开始",
+  "description": "本指南将帮助您在几分钟内运行第一个DISCOVERSE仿真示例，体验框架的核心功能。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/get-started/quick-start.md",
+  "sourceDirName": "get-started",
+  "slug": "/get-started/quick-start",
+  "permalink": "/zh-Hans/docs/get-started/quick-start",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/get-started/quick-start.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "安装指南",
+    "permalink": "/zh-Hans/docs/get-started/installation"
+  },
+  "next": {
+    "title": "基本概念",
+    "permalink": "/zh-Hans/docs/get-started/basic-concepts"
+  }
+}

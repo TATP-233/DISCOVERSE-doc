@@ -1,0 +1,313 @@
+{
+  "/zh-Hans/blog-575": {
+    "__comp": "a6aa9e1f",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "f4f34a3a"
+      },
+      {
+        "content": "8717b14a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "__props": "08765e37"
+  },
+  "/zh-Hans/blog/archive-c6a": {
+    "__comp": "9e4087bc",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "__props": "9e473607"
+  },
+  "/zh-Hans/blog/authors-eed": {
+    "__comp": "621db11d",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "__props": "88b35d3f"
+  },
+  "/zh-Hans/blog/authors/all-sebastien-lorber-articles-3cd": {
+    "__comp": "33fc5bb8",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "f4f34a3a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "sidebar": "814f3328",
+    "__props": "7c0b0d59"
+  },
+  "/zh-Hans/blog/authors/yangshun-b1b": {
+    "__comp": "33fc5bb8",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "8717b14a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "sidebar": "814f3328",
+    "__props": "0feed312"
+  },
+  "/zh-Hans/blog/first-blog-post-9f9": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "e273c56f"
+  },
+  "/zh-Hans/blog/long-blog-post-d61": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "73664a40"
+  },
+  "/zh-Hans/blog/mdx-blog-post-d1e": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "59362658"
+  },
+  "/zh-Hans/blog/tags-c60": {
+    "__comp": "01a85c17",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "__props": "01e32622"
+  },
+  "/zh-Hans/blog/tags/docusaurus-874": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "f4f34a3a"
+      },
+      {
+        "content": "8717b14a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "__props": "e10fa95e"
+  },
+  "/zh-Hans/blog/tags/facebook-205": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      }
+    ],
+    "__props": "32229430"
+  },
+  "/zh-Hans/blog/tags/hello-0ab": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "8717b14a"
+      }
+    ],
+    "__props": "bd4c804c"
+  },
+  "/zh-Hans/blog/tags/hola-c43": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "__props": "ecff885c"
+  },
+  "/zh-Hans/blog/welcome-abc": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "d9f32620"
+  },
+  "/zh-Hans/markdown-page-1d3": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "content": "393be207"
+  },
+  "/zh-Hans/docs-9d2": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/zh-Hans/docs-b60": {
+    "__comp": "a7bd4aaa",
+    "__props": "eceef310"
+  },
+  "/zh-Hans/docs-5db": {
+    "__comp": "a94703ab"
+  },
+  "/zh-Hans/docs/get-started/basic-concepts-d43": {
+    "__comp": "17896441",
+    "content": "730b5d97"
+  },
+  "/zh-Hans/docs/get-started/installation-542": {
+    "__comp": "17896441",
+    "content": "f540a5d6"
+  },
+  "/zh-Hans/docs/get-started/quick-start-0b3": {
+    "__comp": "17896441",
+    "content": "6c7fb8ce"
+  },
+  "/zh-Hans/docs/get-started/real2sim-ab8": {
+    "__comp": "17896441",
+    "content": "1f886a98"
+  },
+  "/zh-Hans/docs/tutorials/basic-simulation/environment-setup-650": {
+    "__comp": "17896441",
+    "content": "b6a82928"
+  },
+  "/zh-Hans/docs/tutorials/basic-simulation/overview-11f": {
+    "__comp": "17896441",
+    "content": "010369e4"
+  },
+  "/zh-Hans/docs/tutorials/basic-simulation/robot-control-b43": {
+    "__comp": "17896441",
+    "content": "e0f85d41"
+  },
+  "/zh-Hans/docs/tutorials/data-generation/domain-randomization-7cb": {
+    "__comp": "17896441",
+    "content": "c9030787"
+  },
+  "/zh-Hans/docs/tutorials/data-generation/overview-031": {
+    "__comp": "17896441",
+    "content": "2e03ac19"
+  },
+  "/zh-Hans/docs/tutorials/imitation-learning/act-36a": {
+    "__comp": "17896441",
+    "content": "085f87cc"
+  },
+  "/zh-Hans/docs/tutorials/imitation-learning/data-generation-6c5": {
+    "__comp": "17896441",
+    "content": "0ee094d2"
+  },
+  "/zh-Hans/docs/tutorials/imitation-learning/dp-c99": {
+    "__comp": "17896441",
+    "content": "07776514"
+  },
+  "/zh-Hans/docs/tutorials/imitation-learning/openpi-184": {
+    "__comp": "17896441",
+    "content": "7869c915"
+  },
+  "/zh-Hans/docs/tutorials/imitation-learning/overview-d57": {
+    "__comp": "17896441",
+    "content": "a434ca32"
+  },
+  "/zh-Hans/docs/tutorials/imitation-learning/rdt-5df": {
+    "__comp": "17896441",
+    "content": "76397fd4"
+  },
+  "/zh-Hans/docs/tutorials/modeling/gaussian-splatting-2f0": {
+    "__comp": "17896441",
+    "content": "29540af1"
+  },
+  "/zh-Hans/docs/tutorials/modeling/mesh2mjcf-52d": {
+    "__comp": "17896441",
+    "content": "1ed63b1b"
+  },
+  "/zh-Hans/docs/tutorials/modeling/overview-906": {
+    "__comp": "17896441",
+    "content": "7d7d5b21"
+  },
+  "/zh-Hans/docs/tutorials/modeling/xml-editor-3a8": {
+    "__comp": "17896441",
+    "content": "a2d12c9a"
+  },
+  "/zh-Hans/docs/tutorials/sensors/overview-0b6": {
+    "__comp": "17896441",
+    "content": "0f7cbe50"
+  },
+  "/zh-Hans/docs/tutorials/sensors/stereo-camera-cfb": {
+    "__comp": "17896441",
+    "content": "e26afffc"
+  },
+  "/zh-Hans/-85c": {
+    "__comp": "1df93b7f",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  }
+}

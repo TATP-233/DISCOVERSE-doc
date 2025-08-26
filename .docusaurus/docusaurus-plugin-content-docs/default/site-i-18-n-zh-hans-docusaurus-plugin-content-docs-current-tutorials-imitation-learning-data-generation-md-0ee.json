@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/imitation-learning/data-generation",
+  "title": "数据生成",
+  "description": "数据生成是模仿学习的第一步，DISCOVERSE提供了自动化的数据收集工具。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/imitation-learning/data-generation.md",
+  "sourceDirName": "tutorials/imitation-learning",
+  "slug": "/tutorials/imitation-learning/data-generation",
+  "permalink": "/zh-Hans/docs/tutorials/imitation-learning/data-generation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/imitation-learning/data-generation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "模仿学习概览",
+    "permalink": "/zh-Hans/docs/tutorials/imitation-learning/overview"
+  },
+  "next": {
+    "title": "ACT (Action Chunking with Transformers)",
+    "permalink": "/zh-Hans/docs/tutorials/imitation-learning/act"
+  }
+}
