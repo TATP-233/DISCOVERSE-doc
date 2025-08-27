@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdiscoverse_docs=self.webpackChunkdiscoverse_docs||[]).push([[2196],{1048:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/DISCOVERSE-doc/zh-Hans/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
