@@ -1,0 +1,27 @@
+{
+  "id": "get-started/troubleshooting",
+  "title": "故障排除指南",
+  "description": "本指南帮助您解决安装和使用 DISCOVERSE 时的常见问题。问题按类别组织，便于快速定位。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/get-started/troubleshooting.md",
+  "sourceDirName": "get-started",
+  "slug": "/get-started/troubleshooting",
+  "permalink": "/DISCOVERSE-doc/zh-Hans/docs/get-started/troubleshooting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/get-started/troubleshooting.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "使用指南",
+    "permalink": "/DISCOVERSE-doc/zh-Hans/docs/get-started/usage"
+  },
+  "next": {
+    "title": "环境设置",
+    "permalink": "/DISCOVERSE-doc/zh-Hans/docs/tutorials/basic-simulation/environment-setup"
+  }
+}

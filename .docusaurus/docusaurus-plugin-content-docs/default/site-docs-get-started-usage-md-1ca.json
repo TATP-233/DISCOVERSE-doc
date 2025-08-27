@@ -1,0 +1,27 @@
+{
+  "id": "get-started/usage",
+  "title": "Usage Guide",
+  "description": "BaseConfig Class",
+  "source": "@site/docs/get-started/usage.md",
+  "sourceDirName": "get-started",
+  "slug": "/get-started/usage",
+  "permalink": "/DISCOVERSE-doc/docs/get-started/usage",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/get-started/usage.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Real2Sim Asset Generation",
+    "permalink": "/DISCOVERSE-doc/docs/get-started/real2sim"
+  },
+  "next": {
+    "title": "Troubleshooting Guide",
+    "permalink": "/DISCOVERSE-doc/docs/get-started/troubleshooting"
+  }
+}

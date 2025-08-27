@@ -1,0 +1,23 @@
+{
+  "id": "tutorials/data-generation/automated-data-generation",
+  "title": "自动化数据生成",
+  "description": "仿真器相比与真实场景有显著的优势在于可以便捷地获取特权观测，例如在仿真中可以直接获取任意物体的位置、姿态、速度等信息，利用这些信息可以自动化生成原子操作数据。下面以ROS1的手柄操作为例，为platecoffeecup任务生成操作策略。",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/tutorials/data-generation/automated-data-generation.md",
+  "sourceDirName": "tutorials/data-generation",
+  "slug": "/tutorials/data-generation/automated-data-generation",
+  "permalink": "/DISCOVERSE-doc/zh-Hans/docs/tutorials/data-generation/automated-data-generation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/data-generation/automated-data-generation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "域随机化技术",
+    "permalink": "/DISCOVERSE-doc/zh-Hans/docs/tutorials/data-generation/domain-randomization"
+  }
+}
