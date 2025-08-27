@@ -1,18 +1,24 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "type": "shell",
-      "label": "Docusaurus Build and Serve",
-      "command": "npm run build && npm run serve",
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": [],
-      "options": {
-        "cwd": "${workspaceFolder}"
-      }
-    }
-  ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Docusaurus Build and Serve",
+			"command": "npm run build && npm run serve",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
+		},
+		{
+			"label": "Docusaurus 手动部署到 gh-pages",
+			"type": "shell",
+			"command": "npm run build && rm -rf /tmp/discoverse-doc-build && cp -r build /tmp/discoverse-doc-build && git checkout gh-pages && rm -rf * && cp -r /tmp/discoverse-doc-build/* ./ && rm -rf /tmp/discoverse-doc-build && git add . && git commit -m \"deploy: update gh-pages\" && git push origin gh-pages --force",
+			"group": "build"
+		}
+	]
 }

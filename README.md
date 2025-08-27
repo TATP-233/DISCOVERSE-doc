@@ -51,6 +51,43 @@ npm run serve
 npm run build && npm run serve
 ```
 
+
+## 手动部署到 GitHub Pages（gh-pages 分支）
+
+如遇 Docusaurus 自动部署失败，可采用如下手动部署方法：
+
+1. 在 `main` 分支下构建静态文件，将 build 目录内容复制到一个临时目录：
+  ```bash
+  npm run build
+  cp -r build /tmp/discoverse-doc-build
+  ```
+2. 切换到 `gh-pages` 分支，清空分支内容，把刚刚复制的 build 目录内容复制到 gh-pages 分支根目录：
+  ```bash
+  git checkout gh-pages
+  rm -rf *
+  cp -r /tmp/discoverse-doc-build/* ./
+  rm -rf /tmp/discoverse-doc-build*
+  ```
+3. 提交并推送：
+  ```bash
+  git add .
+  git commit -m "deploy: update gh-pages"
+  git push origin gh-pages --force
+  ```
+
+这样可确保 `build` 目录内容正确部署到 GitHub Pages。
+
+
+### 🎯 GitHub Pages 配置检查
+
+部署完成后，确保 GitHub 仓库设置正确：
+
+1. 进入仓库 Settings → Pages
+2. Source 选择 "Deploy from a branch"
+3. Branch 选择 "gh-pages"
+4. Folder 选择 "/ (root)"
+
+---
 ## 多语言支持
 
 本项目支持中英文双语，使用 Docusaurus 官方 i18n 功能。
