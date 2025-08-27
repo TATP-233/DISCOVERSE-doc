@@ -96,6 +96,7 @@ const config: Config = {
         src: 'img/logo.svg',
         srcDark: 'img/logo.svg',
       },
+      hideOnScroll: false,
       items: [
         {
           type: 'doc',

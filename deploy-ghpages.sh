@@ -113,12 +113,27 @@ else
             echo "✅ 推送成功！"
         else
             echo "❌ 推送失败，可能是网络问题"
-            echo "💡 后续步骤："
-            echo "   自动恢复现场..."
-            rsync -a --delete "$BACKUP_DIR"/ ./
-            echo "✅ 已用备份恢复项目文件夹"
-            echo "   2. 稍后手动执行: git push origin gh-pages --force"
-            echo "   3. 或切回 main 分支继续: git checkout main"
+            echo "💡 提交已成功，选择后续操作："
+            echo "   1. 稍后手动执行: git push origin gh-pages --force"
+            echo "   2. 切回 main 分支继续开发"
+            echo ""
+            read -p "🔄 是否现在重试推送？直接回车重试，输入N跳过 (Y/n): " -n 1 -r
+            echo ""
+            
+            if [[ $REPLY =~ ^[Nn]$ ]]; then
+                echo "⏭️ 跳过推送，继续恢复现场..."
+            else
+                echo "🔄 重试推送..."
+                if git push origin gh-pages --force; then
+                    echo "✅ 推送成功！"
+                else
+                    echo "❌ 推送仍然失败，稍后手动重试"
+                    echo "💡 手动重试命令："
+                    echo "   git checkout gh-pages"
+                    echo "   git push origin gh-pages --force"
+                    echo "   git checkout main"
+                fi
+            fi
         fi
     else
         echo "❌ 提交失败"
@@ -148,7 +163,7 @@ fi
 
 # 8. 清空工程目录并用备份覆盖
 echo "[8/8] 清空工程目录并用备份覆盖..."
-if find . -maxdepth 1 ! -name '.*' ! -name '.' ! -name '..' -exec rm -rf {} + && cp -r "$BACKUP_DIR"/* ./; then
+if rsync -a --delete "$BACKUP_DIR"/ ./; then
     echo "✅ 已用备份覆盖当前工程目录"
 else
     echo "❌ 工程目录恢复失败"

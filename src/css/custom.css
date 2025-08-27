@@ -271,10 +271,201 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Mobile sidebar fixes */
+@media (max-width: 996px) {
+  /* Ensure sidebar is properly hidden when closed */
+  .navbar-sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: var(--ifm-navbar-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--ifm-navbar-height));
+    background: var(--ifm-background-color);
+    z-index: 1000;
+  }
+  
+  .navbar-sidebar--show {
+    transform: translateX(0);
+  }
+  
+  /* Fix sidebar backdrop */
+  .navbar-sidebar__backdrop {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+  }
+  
+  .navbar-sidebar--show .navbar-sidebar__backdrop {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Improve sidebar content spacing on mobile */
+  .navbar-sidebar__items {
+    padding: 1rem;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Fix doc sidebar on mobile */
+  .theme-doc-sidebar-container {
+    min-height: calc(100vh - var(--ifm-navbar-height));
+    position: static;
+  }
+  
+  /* Hide desktop sidebar on mobile */
+  .theme-doc-sidebar-container .sidebar-desktop {
+    display: none !important;
+  }
+  
+  /* Ensure sidebar menu is scrollable on mobile */
+  .menu {
+    max-height: none;
+    overflow-y: visible;
+    padding: 0;
+  }
+  
+  /* Fix sidebar toggle button visibility */
+  .navbar__toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .navbar__toggle svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--ifm-navbar-link-color);
+  }
+  
+  /* Improve menu item spacing on mobile */
+  .menu__link {
+    padding: 0.75rem 1rem;
+    min-height: 44px; /* Touch-friendly minimum size */
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    margin: 2px 0;
+  }
+  
+  .menu__list-item {
+    margin: 0.25rem 0;
+  }
+  
+  /* Fix collapsed categories on mobile */
+  .menu__list-item--collapsed .menu__link--sublist:after {
+    transform: rotateZ(0deg);
+  }
+  
+  .menu__list-item:not(.menu__list-item--collapsed) .menu__link--sublist:after {
+    transform: rotateZ(90deg);
+  }
+  
+  /* Ensure mobile hamburger menu works */
+  .navbar__item.navbar__item--mobile-menu {
+    display: flex !important;
+  }
+  
+  /* Hide desktop menu items on mobile */
+  .navbar__item:not(.navbar__item--mobile-menu):not(.navbar__toggle) {
+    display: none;
+  }
+  
+  /* Show mobile menu items */
+  .navbar-sidebar .navbar__item {
+    display: block !important;
+  }
+  
+  /* Improve mobile navigation */
+  .navbar-sidebar .navbar__brand {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  }
+}
+
+/* Tablet and small desktop adjustments */
+@media (max-width: 1200px) and (min-width: 997px) {
+  .theme-doc-sidebar-container {
+    --doc-sidebar-width: 250px;
+  }
+}
+
 /* Responsive typography */
 @media (max-width: 768px) {
   :root {
     --ifm-font-size-base: 14px;
+  }
+  
+  /* Additional mobile typography adjustments */
+  .navbar__title {
+    font-size: 1.1rem;
+  }
+  
+  .hero__title {
+    font-size: 2rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+  
+  /* Fix content padding on mobile */
+  .main-wrapper {
+    padding: 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Ultra-narrow screens (iPhone SE, etc.) */
+@media (max-width: 375px) {
+  :root {
+    --ifm-font-size-base: 13px;
+  }
+  
+  .navbar__brand {
+    margin-right: 0.5rem;
+  }
+  
+  .navbar__title {
+    font-size: 1rem;
+  }
+  
+  /* Make sure sidebar takes full width on very narrow screens */
+  .navbar-sidebar {
+    width: 100vw;
+  }
+  
+  /* Reduce padding on very narrow screens */
+  .navbar-sidebar__items {
+    padding: 0.75rem;
+  }
+  
+  .menu__link {
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .container {
+    padding: 0 0.75rem;
   }
 }
 
