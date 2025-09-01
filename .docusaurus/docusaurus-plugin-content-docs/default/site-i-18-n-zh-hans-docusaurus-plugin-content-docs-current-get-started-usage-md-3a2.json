@@ -1,0 +1,27 @@
+{
+  "id": "get-started/usage",
+  "title": "使用指南",
+  "description": "BaseConfig 类",
+  "source": "@site/i18n/zh-Hans/docusaurus-plugin-content-docs/current/get-started/usage.md",
+  "sourceDirName": "get-started",
+  "slug": "/get-started/usage",
+  "permalink": "/DISCOVERSE-doc/zh-Hans/docs/get-started/usage",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/get-started/usage.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Real2Sim资产生成",
+    "permalink": "/DISCOVERSE-doc/zh-Hans/docs/get-started/real2sim"
+  },
+  "next": {
+    "title": "故障排除指南",
+    "permalink": "/DISCOVERSE-doc/zh-Hans/docs/get-started/troubleshooting"
+  }
+}

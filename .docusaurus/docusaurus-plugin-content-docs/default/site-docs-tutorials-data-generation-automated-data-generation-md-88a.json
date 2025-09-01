@@ -1,0 +1,27 @@
+{
+  "id": "tutorials/data-generation/automated-data-generation",
+  "title": "Automated Data Generation",
+  "description": "Compared to real-world scenarios, simulators have a significant advantage in easily obtaining privileged observations. For example, in simulation, you can directly access position, orientation, velocity, and other information of any object. Using this information, you can automatically generate atomic operation data. Below is an example using ROS1 gamepad control to generate operation strategies for the platecoffeecup task.",
+  "source": "@site/docs/tutorials/data-generation/automated-data-generation.md",
+  "sourceDirName": "tutorials/data-generation",
+  "slug": "/tutorials/data-generation/automated-data-generation",
+  "permalink": "/DISCOVERSE-doc/docs/tutorials/data-generation/automated-data-generation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/tutorials/data-generation/automated-data-generation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "XML Editor",
+    "permalink": "/DISCOVERSE-doc/docs/tutorials/modeling/xml-editor"
+  },
+  "next": {
+    "title": "Domain Randomization Techniques",
+    "permalink": "/DISCOVERSE-doc/docs/tutorials/data-generation/domain-randomization"
+  }
+}

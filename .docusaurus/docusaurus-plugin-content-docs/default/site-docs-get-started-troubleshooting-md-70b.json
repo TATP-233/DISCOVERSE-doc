@@ -1,0 +1,27 @@
+{
+  "id": "get-started/troubleshooting",
+  "title": "Troubleshooting Guide",
+  "description": "This guide helps you resolve common issues when installing and using DISCOVERSE. Issues are organized by category for easy navigation.",
+  "source": "@site/docs/get-started/troubleshooting.md",
+  "sourceDirName": "get-started",
+  "slug": "/get-started/troubleshooting",
+  "permalink": "/DISCOVERSE-doc/docs/get-started/troubleshooting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TATP-233/DISCOVERSE/tree/main/discoverse-docs/docs/get-started/troubleshooting.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Usage Guide",
+    "permalink": "/DISCOVERSE-doc/docs/get-started/usage"
+  },
+  "next": {
+    "title": "Basic Simulation Overview",
+    "permalink": "/DISCOVERSE-doc/docs/tutorials/basic-simulation/overview"
+  }
+}
