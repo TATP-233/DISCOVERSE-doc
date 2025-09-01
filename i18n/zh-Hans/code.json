@@ -321,5 +321,61 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "homepage.features.real2sim.title": {
+    "message": "高保真真实到仿真生成",
+    "description": "Title for Real2Sim feature"
+  },
+  "homepage.features.real2sim.description": {
+    "message": "先进的 3D 高斯点云渲染，支持分层场景重建、LiDAR 集成和 AI 驱动的 3D 生成，创建逼真的仿真环境。",
+    "description": "Description for Real2Sim feature"
+  },
+  "homepage.features.compatibility.title": {
+    "message": "通用兼容性与灵活性",
+    "description": "Title for compatibility feature"
+  },
+  "homepage.features.compatibility.description": {
+    "message": "支持多种格式资产（3DGS、Mesh、MJCF），多样化机器人平台（机械臂、移动操作器、人形机器人），以及无缝 ROS2 集成实现真实世界部署。",
+    "description": "Description for compatibility feature"
+  },
+  "homepage.features.learning.title": {
+    "message": "端到端学习流水线",
+    "description": "Title for learning pipeline feature"
+  },
+  "homepage.features.learning.description": {
+    "message": "自动化数据收集效率提升 100 倍，多种学习算法（ACT、Diffusion Policy、RDT），以及最先进的零样本 Sim2Real 迁移。",
+    "description": "Description for learning pipeline feature"
+  },
+  "homepage.benchmarks.title": {
+    "message": "性能基准测试",
+    "description": "Title for performance benchmarks section"
+  },
+  "homepage.benchmarks.description": {
+    "message": "DISCOVERSE 展示了卓越的 Sim2Real 迁移性能，取得了最先进的结果",
+    "description": "Description for performance benchmarks section"
+  },
+  "homepage.benchmarks.table.method": {
+    "message": "方法",
+    "description": "Method column header in benchmarks table"
+  },
+  "homepage.benchmarks.table.closeLaptop": {
+    "message": "关闭笔记本电脑",
+    "description": "Close Laptop column header in benchmarks table"
+  },
+  "homepage.benchmarks.table.pushMouse": {
+    "message": "推动鼠标",
+    "description": "Push Mouse column header in benchmarks table"
+  },
+  "homepage.benchmarks.table.pickKiwi": {
+    "message": "抓取猕猴桃",
+    "description": "Pick Kiwi column header in benchmarks table"
+  },
+  "homepage.benchmarks.table.average": {
+    "message": "平均值",
+    "description": "Average column header in benchmarks table"
+  },
+  "homepage.benchmarks.table.caption": {
+    "message": "使用 ACT 策略的零样本 Sim2Real 成功率",
+    "description": "Caption for benchmarks table"
   }
 }

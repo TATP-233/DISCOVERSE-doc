@@ -5,7 +5,7 @@
 
 .heroBanner {
   padding: 4rem 0;
-  text-align: center;
+  text-align: center !important;
   position: relative;
   overflow: hidden;
 }
@@ -13,6 +13,7 @@
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
+    text-align: center !important;
   }
 }
 
@@ -23,9 +24,9 @@
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -37,9 +38,23 @@
   }
 }
 
-/* 容器响应式 */
+/* 确保容器也居中 */
 .heroBanner .container {
+  text-align: center !important;
   max-width: min(1200px, 95vw);
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+/* 确保标题元素居中 */
+.heroBanner h1,
+.heroBanner .hero__title {
+  text-align: center !important;
+}
+
+/* 确保副标题和描述居中 */
+.heroBanner p,
+.heroBanner .hero__subtitle,
+.heroBanner .hero__description {
+  text-align: center !important;
 }

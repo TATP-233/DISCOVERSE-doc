@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { translate } from '@docusaurus/Translate';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
@@ -16,7 +17,7 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title" style={{ color: 'white' }}>
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle" style={{ color: 'rgba(255, 255, 255, 0.9)', textAlign: 'center' }}>{siteConfig.tagline}</p>
+        <p className="hero__subtitle" style={{ color: 'rgba(255, 255, 255, 0.9)', textAlign: 'center' }}>复杂高保真环境中的高效机器人仿真</p>
         <p className="hero__description" style={{
           fontSize: '1.1rem',
           opacity: 0.9,
@@ -27,7 +28,7 @@ function HomepageHeader() {
           textAlign: 'center',
           padding: '0 1rem'
         }}>
-          A unified, modular, open-source 3DGS-based simulation framework for Real2Sim2Real robot learning
+          基于 3DGS 的统一、模块化、开源仿真框架，<br />支持 Real2Sim2Real 机器人学习工作流
         </p>
         <div className={styles.buttons}>
           <Link
@@ -40,7 +41,7 @@ function HomepageHeader() {
               fontWeight: '600'
             }}
             to="/docs/get-started/installation">
-            Get Started 🚀
+            快速开始 🚀
           </Link>
           <Link
             className="button button--secondary button--lg"
@@ -52,7 +53,7 @@ function HomepageHeader() {
               fontWeight: '600'
             }}
             to="/docs/tutorials/basic-simulation/overview">
-            View Examples 🤖
+            查看示例 🤖
           </Link>
         </div>
         <div className={styles.buttons} style={{ marginTop: '2rem' }}>
@@ -66,7 +67,7 @@ function HomepageHeader() {
               color: 'white',
               fontWeight: '600'
             }}>
-            ⭐ Star on GitHub
+            ⭐ GitHub 点赞
           </Link>
           <Link
             className="button button--secondary button--lg"
@@ -77,7 +78,7 @@ function HomepageHeader() {
               color: 'white',
               fontWeight: '600'
             }}>
-            📄 Read Paper
+            📄 阅读论文
           </Link>
         </div>
       </div>
@@ -89,8 +90,8 @@ export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} - Robot Simulation Framework`}
-      description="DISCOVERSE: Efficient Robot Simulation in Complex High-Fidelity Environments. A unified 3DGS-based framework for Real2Sim2Real robot learning.">
+      title={`${siteConfig.title} - 机器人仿真框架`}
+      description="DISCOVERSE：复杂高保真环境中的高效机器人仿真。基于 3DGS 的统一 Real2Sim2Real 机器人学习框架。">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

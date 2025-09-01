@@ -42,3 +42,54 @@
   height: 200px;
   width: 200px;
 }
+
+/* 表格居中样式 */
+.benchmarkTable {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benchmarkTableContainer {
+  background: var(--ifm-card-background-color);
+  border-radius: var(--ifm-global-radius);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: min(900px, 95vw);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.benchmarkTableWrapper {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .benchmarkTableContainer {
+    padding: 1rem;
+    margin: 0 0.5rem;
+  }
+  
+  .benchmarkTableWrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benchmarkTableContainer {
+    padding: 0.5rem;
+    margin: 0 0.25rem;
+  }
+}

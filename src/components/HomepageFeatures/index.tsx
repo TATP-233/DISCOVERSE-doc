@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import { translate } from '@docusaurus/Translate';
 import styles from './styles.module.css';
 
 type FeatureItem = {
@@ -11,32 +12,53 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'High-Fidelity Real2Sim Generation',
+    title: translate({
+      id: 'homepage.features.real2sim.title',
+      message: 'High-Fidelity Real2Sim Generation',
+      description: 'Title for Real2Sim feature',
+    }),
     icon: '🌐',
     description: (
       <>
-        Advanced 3D Gaussian Splatting rendering with hierarchical scene reconstruction,
-        LiDAR integration, and AI-powered 3D generation for photorealistic simulation environments.
+        {translate({
+          id: 'homepage.features.real2sim.description',
+          message: 'Advanced 3D Gaussian Splatting rendering with hierarchical scene reconstruction, LiDAR integration, and AI-powered 3D generation for photorealistic simulation environments.',
+          description: 'Description for Real2Sim feature',
+        })}
       </>
     ),
   },
   {
-    title: 'Universal Compatibility & Flexibility',
+    title: translate({
+      id: 'homepage.features.compatibility.title',
+      message: 'Universal Compatibility & Flexibility',
+      description: 'Title for compatibility feature',
+    }),
     icon: '🔧',
     description: (
       <>
-        Multi-format asset support (3DGS, Mesh, MJCF), diverse robot platforms
-        (arms, mobile manipulators, humanoids), and seamless ROS2 integration for real-world deployment.
+        {translate({
+          id: 'homepage.features.compatibility.description',
+          message: 'Multi-format asset support (3DGS, Mesh, MJCF), diverse robot platforms (arms, mobile manipulators, humanoids), and seamless ROS2 integration for real-world deployment.',
+          description: 'Description for compatibility feature',
+        })}
       </>
     ),
   },
   {
-    title: 'End-to-End Learning Pipeline',
+    title: translate({
+      id: 'homepage.features.learning.title',
+      message: 'End-to-End Learning Pipeline',
+      description: 'Title for learning pipeline feature',
+    }),
     icon: '🎓',
     description: (
       <>
-        Automated data collection with 100× efficiency improvement, multiple learning algorithms
-        (ACT, Diffusion Policy, RDT), and state-of-the-art zero-shot Sim2Real transfer.
+        {translate({
+          id: 'homepage.features.learning.description',
+          message: 'Automated data collection with 100× efficiency improvement, multiple learning algorithms (ACT, Diffusion Policy, RDT), and state-of-the-art zero-shot Sim2Real transfer.',
+          description: 'Description for learning pipeline feature',
+        })}
       </>
     ),
   },
@@ -72,14 +94,24 @@ export default function HomepageFeatures(): ReactNode {
         <div className="row" style={{ marginTop: '4rem', marginBottom: '2rem' }}>
           <div className="col col--12">
             <div className="text--center">
-              <Heading as="h2" style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🏆 Performance Benchmarks</Heading>
+              <Heading as="h2" style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
+                🏆 {translate({
+                  id: 'homepage.benchmarks.title',
+                  message: 'Performance Benchmarks',
+                  description: 'Title for performance benchmarks section',
+                })}
+              </Heading>
               <p style={{
                 fontSize: '1.1rem',
                 margin: '1rem auto 3rem auto',
                 maxWidth: '800px',
                 lineHeight: '1.6'
               }}>
-                DISCOVERSE demonstrates superior Sim2Real transfer performance with state-of-the-art results
+                {translate({
+                  id: 'homepage.benchmarks.description',
+                  message: 'DISCOVERSE demonstrates superior Sim2Real transfer performance with state-of-the-art results',
+                  description: 'Description for performance benchmarks section',
+                })}
               </p>
             </div>
           </div>
@@ -87,24 +119,15 @@ export default function HomepageFeatures(): ReactNode {
 
         <div className="row">
           <div className="col col--12">
-            <div style={{
-              background: 'var(--ifm-card-background-color)',
-              borderRadius: 'var(--ifm-global-radius)',
-              border: '1px solid var(--ifm-color-emphasis-200)',
-              padding: '2rem',
-              margin: '0 auto',
-              maxWidth: '900px',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center'
-            }}>
-              <div style={{ width: '100%', textAlign: 'center' }}>
+            <div className={styles.benchmarkTableContainer}>
+              <div className={styles.benchmarkTableWrapper}>
                 <table style={{
-                  width: '100%',
+                  width: 'auto',
                   maxWidth: '800px',
                   borderCollapse: 'collapse',
                   margin: '0 auto',
-                  fontSize: '1rem'
+                  fontSize: '1rem',
+                  textAlign: 'center'
                 }}>
                   <thead>
                     <tr>
@@ -113,31 +136,51 @@ export default function HomepageFeatures(): ReactNode {
                         borderBottom: '2px solid var(--ifm-color-emphasis-200)',
                         textAlign: 'center',
                         fontWeight: 'bold'
-                      }}>Method</th>
+                      }}>{translate({
+                        id: 'homepage.benchmarks.table.method',
+                        message: 'Method',
+                        description: 'Method column header in benchmarks table',
+                      })}</th>
                       <th style={{
                         padding: '1rem',
                         borderBottom: '2px solid var(--ifm-color-emphasis-200)',
                         textAlign: 'center',
                         fontWeight: 'bold'
-                      }}>Close Laptop</th>
+                      }}>{translate({
+                        id: 'homepage.benchmarks.table.closeLaptop',
+                        message: 'Close Laptop',
+                        description: 'Close Laptop column header in benchmarks table',
+                      })}</th>
                       <th style={{
                         padding: '1rem',
                         borderBottom: '2px solid var(--ifm-color-emphasis-200)',
                         textAlign: 'center',
                         fontWeight: 'bold'
-                      }}>Push Mouse</th>
+                      }}>{translate({
+                        id: 'homepage.benchmarks.table.pushMouse',
+                        message: 'Push Mouse',
+                        description: 'Push Mouse column header in benchmarks table',
+                      })}</th>
                       <th style={{
                         padding: '1rem',
                         borderBottom: '2px solid var(--ifm-color-emphasis-200)',
                         textAlign: 'center',
                         fontWeight: 'bold'
-                      }}>Pick Kiwi</th>
+                      }}>{translate({
+                        id: 'homepage.benchmarks.table.pickKiwi',
+                        message: 'Pick Kiwi',
+                        description: 'Pick Kiwi column header in benchmarks table',
+                      })}</th>
                       <th style={{
                         padding: '1rem',
                         borderBottom: '2px solid var(--ifm-color-emphasis-200)',
                         fontWeight: 'bold',
                         textAlign: 'center'
-                      }}>Average</th>
+                      }}>{translate({
+                        id: 'homepage.benchmarks.table.average',
+                        message: 'Average',
+                        description: 'Average column header in benchmarks table',
+                      })}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -287,16 +330,21 @@ export default function HomepageFeatures(): ReactNode {
                     </tr>
                   </tbody>
                 </table>
-                <p style={{
-                  fontSize: '0.9rem',
-                  fontStyle: 'italic',
-                  marginTop: '1.5rem',
-                  opacity: 0.8,
-                  textAlign: 'center'
-                }}>
-                  Zero-shot Sim2Real success rates using ACT policy
-                </p>
               </div>
+              <p style={{
+                fontSize: '0.9rem',
+                fontStyle: 'italic',
+                marginTop: '1.5rem',
+                opacity: 0.8,
+                textAlign: 'center',
+                width: '100%'
+              }}>
+                {translate({
+                  id: 'homepage.benchmarks.table.caption',
+                  message: 'Zero-shot Sim2Real success rates using ACT policy',
+                  description: 'Caption for benchmarks table',
+                })}
+              </p>
             </div>
           </div>
         </div>
